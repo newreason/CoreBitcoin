@@ -1,0 +1,2304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200FA8DA1C07A8B80039029D /* BTCSecretSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200FA8D91C07A8B80039029D /* BTCSecretSharingTests.swift */; };
+		20148AE018355D7200E68E9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D2802517B8FE00004A462B /* Foundation.framework */; };
+		20148C0A1835638200E68E9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20148C081835638200E68E9C /* InfoPlist.strings */; };
+		20148C411835651C00E68E9C /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		20148C9C183643AB00E68E9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20148B3718355F0100E68E9C /* Cocoa.framework */; };
+		20148CEB1836446500E68E9C /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		206B011F183547C200878B8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 206B011D183547C200878B8D /* InfoPlist.strings */; };
+		206B016A1835487700878B8D /* openssl in Headers */ = {isa = PBXBuildFile; fileRef = 2084DD9A17B90081005AC9E6 /* openssl */; settings = {ATTRIBUTES = (Public, ); }; };
+		2084DD5E17B8FF47005AC9E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D2802517B8FE00004A462B /* Foundation.framework */; };
+		2084DD6117B8FF47005AC9E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084DD6017B8FF47005AC9E6 /* main.m */; };
+		2084DD9817B8FFA2005AC9E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2084DD9617B8FFA2005AC9E6 /* Security.framework */; };
+		209F27C11AE538F80092A1FB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2084DD9617B8FFA2005AC9E6 /* Security.framework */; };
+		20C0DDB2183BC5E100A9EED0 /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */; };
+		20C0DDB3183BC5E100A9EED0 /* libssl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */; };
+		20C0DDB4183BC5E200A9EED0 /* libcrypto-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */; platformFilter = ios; };
+		20C0DDB5183BC5E200A9EED0 /* libssl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */; platformFilter = ios; };
+		20C0DDB6183BC5E900A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDB7183BC5E900A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C0DDB8183BC5EA00A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDB9183BC5EA00A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C0DDBA183BC5EB00A9EED0 /* libcrypto-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */; };
+		20C0DDBB183BC5EB00A9EED0 /* libssl-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */; };
+		20C3F16917BFDCF8009DB89C /* libSystem.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C3F16817BFDCF8009DB89C /* libSystem.dylib */; };
+		20FFD8001B1F85F300CCA48D /* BTCPaymentProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FFD7FF1B1F85F300CCA48D /* BTCPaymentProtocolTests.swift */; };
+		752834A91B699BEC00CD92E3 /* BTCScriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752834A81B699BEC00CD92E3 /* BTCScriptTests.swift */; };
+		753118261B6042A400A102E2 /* BTCKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753118251B6042A400A102E2 /* BTCKeychainTests.swift */; };
+		754564761B07F9AB008F34DC /* BTCBitcoinURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754564751B07F9AB008F34DC /* BTCBitcoinURLTests.swift */; };
+		7549DAD11B0BB1D900F20FF0 /* BTCCurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549DAD01B0BB1D900F20FF0 /* BTCCurrencyConverterTests.swift */; };
+		7558460E1B14E4B100E49C87 /* BTCEncryptedBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558460D1B14E4B100E49C87 /* BTCEncryptedBackupTests.swift */; };
+		757B241B1B03F1BF0084A9DE /* CoreLitecoinOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206B0113183547C200878B8D /* CoreLitecoinOSX.framework */; };
+		758C8C451C08F111000C1796 /* BTCBigNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C8C441C08F111000C1796 /* BTCBigNumberTests.swift */; };
+		758DDAFE1BD2D83600AEDFFB /* BTCMnemonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758DDAFD1BD2D83600AEDFFB /* BTCMnemonicTests.swift */; };
+		75A06DA01B17B7FE00ED7E79 /* BTCKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A06D9F1B17B7FE00ED7E79 /* BTCKeyTests.swift */; };
+		75A1A3721B0E7DB900EA8D45 /* BTCBlindSignatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A1A3711B0E7DB900EA8D45 /* BTCBlindSignatureTests.swift */; };
+		75AF30351C152B1D002187AF /* BTCProtocolSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF30341C152B1D002187AF /* BTCProtocolSerializationTests.swift */; };
+		75AF30371C152EE3002187AF /* BTCEncryptedMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF30361C152EE3002187AF /* BTCEncryptedMessageTests.swift */; };
+		75AF303B1C153009002187AF /* BTCMerkleTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF303A1C153009002187AF /* BTCMerkleTreeTests.swift */; };
+		75B819061B04E65A0055F8B1 /* BTCAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B819051B04E65A0055F8B1 /* BTCAddressTests.swift */; };
+		75B819081B04E68B0055F8B1 /* BTCBlockchainInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B819071B04E68B0055F8B1 /* BTCBlockchainInfoTests.swift */; };
+		75B8190A1B04E69A0055F8B1 /* BTCPriceSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B819091B04E69A0055F8B1 /* BTCPriceSourceTests.swift */; };
+		75BBC6E51B0E721700A61690 /* BTCCurvePointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBC6E41B0E721700A61690 /* BTCCurvePointTests.swift */; };
+		75BCBB661C08FADD00D5876A /* BTCBase58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCBB651C08FADD00D5876A /* BTCBase58Tests.swift */; };
+		75BD89A41B46269E0073A611 /* BTCDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD89A31B46269E0073A611 /* BTCDataTests.swift */; };
+		75E565AE1B7927C800CCCFA5 /* BTCTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E565AD1B7927C800CCCFA5 /* BTCTransactionTests.swift */; };
+		75EB9FF11B39C61500C26E70 /* BTC256Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EB9FF01B39C61500C26E70 /* BTC256Tests.swift */; };
+		75FB13E61B449661006D8935 /* BTCFancyEncryptedMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB13E51B449661006D8935 /* BTCFancyEncryptedMessageTests.swift */; };
+		E4D115702470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115712470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115722470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115732470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115742470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115752470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */; };
+		E4D115762470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D115772470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D115782470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D115792470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D1157A2470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D1157B2470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */; };
+		E4D1157C2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E22470AA8600D7DAA7 /* LTCMerkleTree.h */; };
+		E4D1157D2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E22470AA8600D7DAA7 /* LTCMerkleTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1157E2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E22470AA8600D7DAA7 /* LTCMerkleTree.h */; };
+		E4D1157F2470AA9000D7DAA7 /* LTCAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E32470AA8600D7DAA7 /* LTCAddress.h */; };
+		E4D115802470AA9000D7DAA7 /* LTCAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E32470AA8600D7DAA7 /* LTCAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115812470AA9000D7DAA7 /* LTCAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E32470AA8600D7DAA7 /* LTCAddress.h */; };
+		E4D115822470AA9000D7DAA7 /* LTCPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E42470AA8600D7DAA7 /* LTCPriceSource.h */; };
+		E4D115832470AA9000D7DAA7 /* LTCPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E42470AA8600D7DAA7 /* LTCPriceSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115842470AA9000D7DAA7 /* LTCPriceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E42470AA8600D7DAA7 /* LTCPriceSource.h */; };
+		E4D1158B2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E62470AA8600D7DAA7 /* LTCBigNumber.h */; };
+		E4D1158C2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E62470AA8600D7DAA7 /* LTCBigNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1158D2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E62470AA8600D7DAA7 /* LTCBigNumber.h */; };
+		E4D1158E2470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D1158F2470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D115902470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D115912470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D115922470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D115932470AA9000D7DAA7 /* LTCPriceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */; };
+		E4D115942470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D115952470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D115962470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D115972470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D115982470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D115992470AA9000D7DAA7 /* LTCScript.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114E82470AA8600D7DAA7 /* LTCScript.m */; };
+		E4D1159A2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E92470AA8600D7DAA7 /* CoreLitecoin+Categories.h */; };
+		E4D1159B2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E92470AA8600D7DAA7 /* CoreLitecoin+Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1159C2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114E92470AA8600D7DAA7 /* CoreLitecoin+Categories.h */; };
+		E4D1159D2470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D1159E2470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D1159F2470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D115A02470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D115A12470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D115A22470AA9000D7DAA7 /* LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */; };
+		E4D115A32470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A42470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A52470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A62470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A72470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A82470AA9000D7DAA7 /* LTCOutpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */; };
+		E4D115A92470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EC2470AA8700D7DAA7 /* LTCScriptMachine.h */; };
+		E4D115AA2470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EC2470AA8700D7DAA7 /* LTCScriptMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115AB2470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EC2470AA8700D7DAA7 /* LTCScriptMachine.h */; };
+		E4D115AC2470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115AD2470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115AE2470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115AF2470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115B02470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115B12470AA9000D7DAA7 /* LTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114ED2470AA8700D7DAA7 /* LTCKey.m */; };
+		E4D115B22470AA9000D7DAA7 /* LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EE2470AA8700D7DAA7 /* LTCBase58.h */; };
+		E4D115B32470AA9000D7DAA7 /* LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EE2470AA8700D7DAA7 /* LTCBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115B42470AA9000D7DAA7 /* LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114EE2470AA8700D7DAA7 /* LTCBase58.h */; };
+		E4D115BB2470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115BC2470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115BD2470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115BE2470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115BF2470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115C02470AA9000D7DAA7 /* LTCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */; };
+		E4D115C12470AA9000D7DAA7 /* LTCChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F12470AA8700D7DAA7 /* LTCChainCom.h */; };
+		E4D115C22470AA9000D7DAA7 /* LTCChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F12470AA8700D7DAA7 /* LTCChainCom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115C32470AA9000D7DAA7 /* LTCChainCom.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F12470AA8700D7DAA7 /* LTCChainCom.h */; };
+		E4D115C42470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115C52470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115C62470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115C72470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115C82470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115C92470AA9000D7DAA7 /* LTCMnemonic.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */; };
+		E4D115CA2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115CB2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115CC2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115CD2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115CE2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115CF2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */; };
+		E4D115D32470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D42470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D52470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D62470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D72470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D82470AA9000D7DAA7 /* LTCAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F52470AA8700D7DAA7 /* LTCAddress.m */; };
+		E4D115D92470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DA2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DB2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DC2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DD2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DE2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */; };
+		E4D115DF2470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E02470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E12470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E22470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E32470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E42470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */; };
+		E4D115E82470AA9000D7DAA7 /* LTCKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F92470AA8800D7DAA7 /* LTCKey.h */; };
+		E4D115E92470AA9000D7DAA7 /* LTCKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F92470AA8800D7DAA7 /* LTCKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115EA2470AA9000D7DAA7 /* LTCKey.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114F92470AA8800D7DAA7 /* LTCKey.h */; };
+		E4D115EB2470AA9000D7DAA7 /* LTCHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FA2470AA8800D7DAA7 /* LTCHashID.h */; };
+		E4D115EC2470AA9000D7DAA7 /* LTCHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FA2470AA8800D7DAA7 /* LTCHashID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115ED2470AA9000D7DAA7 /* LTCHashID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FA2470AA8800D7DAA7 /* LTCHashID.h */; };
+		E4D115EE2470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FB2470AA8800D7DAA7 /* LTCProtocolSerialization.h */; };
+		E4D115EF2470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FB2470AA8800D7DAA7 /* LTCProtocolSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115F02470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FB2470AA8800D7DAA7 /* LTCProtocolSerialization.h */; };
+		E4D115FD2470AA9000D7DAA7 /* LTCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FE2470AA8800D7DAA7 /* LTCErrors.h */; };
+		E4D115FE2470AA9000D7DAA7 /* LTCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FE2470AA8800D7DAA7 /* LTCErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D115FF2470AA9000D7DAA7 /* LTCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FE2470AA8800D7DAA7 /* LTCErrors.h */; };
+		E4D116002470AA9000D7DAA7 /* LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FF2470AA8800D7DAA7 /* LTCData.h */; };
+		E4D116012470AA9000D7DAA7 /* LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FF2470AA8800D7DAA7 /* LTCData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116022470AA9000D7DAA7 /* LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D114FF2470AA8800D7DAA7 /* LTCData.h */; };
+		E4D116032470AA9000D7DAA7 /* LTCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115002470AA8800D7DAA7 /* LTCProcessor.h */; };
+		E4D116042470AA9000D7DAA7 /* LTCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115002470AA8800D7DAA7 /* LTCProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116052470AA9000D7DAA7 /* LTCProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115002470AA8800D7DAA7 /* LTCProcessor.h */; };
+		E4D116062470AA9000D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D116072470AA9000D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D116082470AA9000D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D116092470AA9100D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D1160A2470AA9100D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D1160B2470AA9100D7DAA7 /* NSData+LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */; };
+		E4D116152470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115042470AA8800D7DAA7 /* LTCAddressSubclass.h */; };
+		E4D116162470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115042470AA8800D7DAA7 /* LTCAddressSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116172470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115042470AA8800D7DAA7 /* LTCAddressSubclass.h */; };
+		E4D116182470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D116192470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D1161A2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D1161B2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D1161C2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D1161D2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */; };
+		E4D116242470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D116252470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D116262470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D116272470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D116282470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D116292470AA9100D7DAA7 /* LTCData.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115072470AA8900D7DAA7 /* LTCData.m */; };
+		E4D1162A2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115082470AA8900D7DAA7 /* LTCFancyEncryptedMessage.h */; };
+		E4D1162B2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115082470AA8900D7DAA7 /* LTCFancyEncryptedMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1162C2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115082470AA8900D7DAA7 /* LTCFancyEncryptedMessage.h */; };
+		E4D1162D2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D1162E2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D1162F2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D116302470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D116312470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D116322470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */; };
+		E4D116332470AA9100D7DAA7 /* LTCOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150A2470AA8900D7DAA7 /* LTCOpcode.h */; };
+		E4D116342470AA9100D7DAA7 /* LTCOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150A2470AA8900D7DAA7 /* LTCOpcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116352470AA9100D7DAA7 /* LTCOpcode.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150A2470AA8900D7DAA7 /* LTCOpcode.h */; };
+		E4D1163C2470AA9100D7DAA7 /* LTCBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150C2470AA8900D7DAA7 /* LTCBlock.h */; };
+		E4D1163D2470AA9100D7DAA7 /* LTCBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150C2470AA8900D7DAA7 /* LTCBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1163E2470AA9100D7DAA7 /* LTCBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1150C2470AA8900D7DAA7 /* LTCBlock.h */; };
+		E4D1163F2470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116402470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116412470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116422470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116432470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116442470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */; };
+		E4D116482470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D116492470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D1164A2470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D1164B2470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D1164C2470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D1164D2470AA9100D7DAA7 /* LTCTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */; };
+		E4D116542470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D116552470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D116562470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D116572470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D116582470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D116592470AA9100D7DAA7 /* LTCHashID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115112470AA8900D7DAA7 /* LTCHashID.m */; };
+		E4D1165A2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D1165B2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D1165C2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D1165D2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D1165E2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D1165F2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */; };
+		E4D116632470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116642470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116652470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116662470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116672470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116682470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */; };
+		E4D116692470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166A2470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166B2470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166C2470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166D2470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166E2470AA9100D7DAA7 /* LTCOpcode.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */; };
+		E4D1166F2470AA9100D7DAA7 /* LTCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115162470AA8A00D7DAA7 /* LTCNetwork.h */; };
+		E4D116702470AA9100D7DAA7 /* LTCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115162470AA8A00D7DAA7 /* LTCNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116712470AA9100D7DAA7 /* LTCNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115162470AA8A00D7DAA7 /* LTCNetwork.h */; };
+		E4D116722470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115172470AA8A00D7DAA7 /* LTCUnitsAndLimits.h */; };
+		E4D116732470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115172470AA8A00D7DAA7 /* LTCUnitsAndLimits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116742470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115172470AA8A00D7DAA7 /* LTCUnitsAndLimits.h */; };
+		E4D116752470AA9100D7DAA7 /* CoreLitecoin.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115182470AA8A00D7DAA7 /* CoreLitecoin.h */; };
+		E4D116762470AA9100D7DAA7 /* CoreLitecoin.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115182470AA8A00D7DAA7 /* CoreLitecoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116772470AA9100D7DAA7 /* CoreLitecoin.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115182470AA8A00D7DAA7 /* CoreLitecoin.h */; };
+		E4D116782470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115192470AA8A00D7DAA7 /* LTCScriptTestData.h */; };
+		E4D116792470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115192470AA8A00D7DAA7 /* LTCScriptTestData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1167A2470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115192470AA8A00D7DAA7 /* LTCScriptTestData.h */; };
+		E4D1167B2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151A2470AA8A00D7DAA7 /* LTCOutpoint.h */; };
+		E4D1167C2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151A2470AA8A00D7DAA7 /* LTCOutpoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1167D2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151A2470AA8A00D7DAA7 /* LTCOutpoint.h */; };
+		E4D1167E2470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151B2470AA8A00D7DAA7 /* LTCTransactionInput.h */; };
+		E4D1167F2470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151B2470AA8A00D7DAA7 /* LTCTransactionInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116802470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151B2470AA8A00D7DAA7 /* LTCTransactionInput.h */; };
+		E4D116812470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116822470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116832470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116842470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116852470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116862470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */; };
+		E4D116872470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151D2470AA8A00D7DAA7 /* LTCCurrencyConverter.h */; };
+		E4D116882470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151D2470AA8A00D7DAA7 /* LTCCurrencyConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116892470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1151D2470AA8A00D7DAA7 /* LTCCurrencyConverter.h */; };
+		E4D1168A2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D1168B2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D1168C2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D1168D2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D1168E2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D1168F2470AA9100D7DAA7 /* LTCAssetID.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */; };
+		E4D116902470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116912470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116922470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116932470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116942470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116952470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */; };
+		E4D116962470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115202470AA8A00D7DAA7 /* LTCBlockHeader.h */; };
+		E4D116972470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115202470AA8A00D7DAA7 /* LTCBlockHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116982470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115202470AA8A00D7DAA7 /* LTCBlockHeader.h */; };
+		E4D116992470AA9100D7DAA7 /* LTCAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115212470AA8A00D7DAA7 /* LTCAssetID.h */; };
+		E4D1169A2470AA9100D7DAA7 /* LTCAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115212470AA8A00D7DAA7 /* LTCAssetID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1169B2470AA9100D7DAA7 /* LTCAssetID.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115212470AA8A00D7DAA7 /* LTCAssetID.h */; };
+		E4D1169C2470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D1169D2470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D1169E2470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D1169F2470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D116A02470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D116A12470AA9100D7DAA7 /* LTCAssetType.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */; };
+		E4D116A22470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A32470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A42470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A52470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A62470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A72470AA9100D7DAA7 /* LTCErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115232470AA8B00D7DAA7 /* LTCErrors.m */; };
+		E4D116A82470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116A92470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116AA2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116AB2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116AC2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116AD2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */; };
+		E4D116B12470AA9100D7DAA7 /* NSData+LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115262470AA8B00D7DAA7 /* NSData+LTCData.h */; };
+		E4D116B22470AA9100D7DAA7 /* NSData+LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115262470AA8B00D7DAA7 /* NSData+LTCData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116B32470AA9100D7DAA7 /* NSData+LTCData.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115262470AA8B00D7DAA7 /* NSData+LTCData.h */; };
+		E4D116B42470AA9100D7DAA7 /* LTCScript.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115272470AA8B00D7DAA7 /* LTCScript.h */; };
+		E4D116B52470AA9100D7DAA7 /* LTCScript.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115272470AA8B00D7DAA7 /* LTCScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116B62470AA9100D7DAA7 /* LTCScript.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115272470AA8B00D7DAA7 /* LTCScript.h */; };
+		E4D116BD2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116BE2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116BF2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116C02470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116C12470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116C22470AA9100D7DAA7 /* LTCBigNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */; };
+		E4D116C32470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152B2470AA8B00D7DAA7 /* LTCAssetAddress.h */; };
+		E4D116C42470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152B2470AA8B00D7DAA7 /* LTCAssetAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116C52470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152B2470AA8B00D7DAA7 /* LTCAssetAddress.h */; };
+		E4D116C62470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152C2470AA8B00D7DAA7 /* LTCPaymentProtocol.h */; };
+		E4D116C72470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152C2470AA8B00D7DAA7 /* LTCPaymentProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116C82470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152C2470AA8B00D7DAA7 /* LTCPaymentProtocol.h */; };
+		E4D116CF2470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152E2470AA8B00D7DAA7 /* LTCProtocolBuffers.h */; };
+		E4D116D02470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152E2470AA8B00D7DAA7 /* LTCProtocolBuffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116D12470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1152E2470AA8B00D7DAA7 /* LTCProtocolBuffers.h */; };
+		E4D116E12470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115322470AA8C00D7DAA7 /* NS+LTCBase58.h */; };
+		E4D116E22470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115322470AA8C00D7DAA7 /* NS+LTCBase58.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116E32470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115322470AA8C00D7DAA7 /* NS+LTCBase58.h */; };
+		E4D116E42470AA9100D7DAA7 /* LTCBitcoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115332470AA8C00D7DAA7 /* LTCBitcoinURL.h */; };
+		E4D116E52470AA9100D7DAA7 /* LTCBitcoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115332470AA8C00D7DAA7 /* LTCBitcoinURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116E62470AA9200D7DAA7 /* LTCBitcoinURL.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115332470AA8C00D7DAA7 /* LTCBitcoinURL.h */; };
+		E4D116EA2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115352470AA8C00D7DAA7 /* LTCPaymentRequest.h */; };
+		E4D116EB2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115352470AA8C00D7DAA7 /* LTCPaymentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D116EC2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115352470AA8C00D7DAA7 /* LTCPaymentRequest.h */; };
+		E4D116F02470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F12470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F22470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F32470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F42470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F52470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */; };
+		E4D116F62470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D116F72470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D116F82470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D116F92470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D116FA2470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D116FB2470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */; };
+		E4D117022470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117032470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117042470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117052470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117062470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117072470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */; };
+		E4D117082470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D117092470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D1170A2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D1170B2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D1170C2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D1170D2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */; };
+		E4D1170E2470AA9200D7DAA7 /* LTCTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153C2470AA8C00D7DAA7 /* LTCTransaction.h */; };
+		E4D1170F2470AA9200D7DAA7 /* LTCTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153C2470AA8C00D7DAA7 /* LTCTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117102470AA9200D7DAA7 /* LTCTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153C2470AA8C00D7DAA7 /* LTCTransaction.h */; };
+		E4D117172470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153E2470AA8C00D7DAA7 /* LTCEncryptedMessage.h */; };
+		E4D117182470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153E2470AA8C00D7DAA7 /* LTCEncryptedMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117192470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153E2470AA8C00D7DAA7 /* LTCEncryptedMessage.h */; };
+		E4D1171A2470AA9200D7DAA7 /* LTCKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153F2470AA8C00D7DAA7 /* LTCKeychain.h */; };
+		E4D1171B2470AA9200D7DAA7 /* LTCKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153F2470AA8C00D7DAA7 /* LTCKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1171C2470AA9200D7DAA7 /* LTCKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1153F2470AA8C00D7DAA7 /* LTCKeychain.h */; };
+		E4D117202470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115412470AA8D00D7DAA7 /* LTCBlockchainInfo.h */; };
+		E4D117212470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115412470AA8D00D7DAA7 /* LTCBlockchainInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117222470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115412470AA8D00D7DAA7 /* LTCBlockchainInfo.h */; };
+		E4D117292470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172A2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172B2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172C2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172D2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172E2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */; };
+		E4D1172F2470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115442470AA8D00D7DAA7 /* LTCTransactionOutput.h */; };
+		E4D117302470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115442470AA8D00D7DAA7 /* LTCTransactionOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117312470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115442470AA8D00D7DAA7 /* LTCTransactionOutput.h */; };
+		E4D1173B2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115472470AA8D00D7DAA7 /* LTCSecretSharing.h */; };
+		E4D1173C2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115472470AA8D00D7DAA7 /* LTCSecretSharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1173D2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115472470AA8D00D7DAA7 /* LTCSecretSharing.h */; };
+		E4D1173E2470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115482470AA8D00D7DAA7 /* LTCEncryptedBackup.h */; };
+		E4D1173F2470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115482470AA8D00D7DAA7 /* LTCEncryptedBackup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117402470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115482470AA8D00D7DAA7 /* LTCEncryptedBackup.h */; };
+		E4D117412470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117422470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117432470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117442470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117452470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117462470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */; };
+		E4D117472470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1154A2470AA8D00D7DAA7 /* LTCCurvePoint.h */; };
+		E4D117482470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1154A2470AA8D00D7DAA7 /* LTCCurvePoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117492470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1154A2470AA8D00D7DAA7 /* LTCCurvePoint.h */; };
+		E4D117562470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D117572470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D117582470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D117592470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D1175A2470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D1175B2470AA9200D7DAA7 /* LTCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */; };
+		E4D117682470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115512470AA8E00D7DAA7 /* LTCPaymentMethodDetails.h */; };
+		E4D117692470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115512470AA8E00D7DAA7 /* LTCPaymentMethodDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D1176A2470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115512470AA8E00D7DAA7 /* LTCPaymentMethodDetails.h */; };
+		E4D1176E2470AA9200D7DAA7 /* LTCMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115532470AA8E00D7DAA7 /* LTCMnemonic.h */; };
+		E4D1176F2470AA9200D7DAA7 /* LTCMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115532470AA8E00D7DAA7 /* LTCMnemonic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117702470AA9200D7DAA7 /* LTCMnemonic.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115532470AA8E00D7DAA7 /* LTCMnemonic.h */; };
+		E4D117712470AA9200D7DAA7 /* LTCAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115542470AA8E00D7DAA7 /* LTCAssetType.h */; };
+		E4D117722470AA9200D7DAA7 /* LTCAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115542470AA8E00D7DAA7 /* LTCAssetType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117732470AA9200D7DAA7 /* LTCAssetType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115542470AA8E00D7DAA7 /* LTCAssetType.h */; };
+		E4D1177D2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D1177E2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D1177F2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D117802470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D117812470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D117822470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */; };
+		E4D117832470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117842470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117852470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117862470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117872470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117882470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */; };
+		E4D117892470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178A2470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178B2470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178C2470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178D2470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178E2470AA9200D7DAA7 /* LTC256.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115592470AA8E00D7DAA7 /* LTC256.m */; };
+		E4D1178F2470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117902470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117912470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117922470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117932470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117942470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */; };
+		E4D117952470AA9200D7DAA7 /* LTC256.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1155B2470AA8E00D7DAA7 /* LTC256.h */; };
+		E4D117962470AA9200D7DAA7 /* LTC256.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1155B2470AA8E00D7DAA7 /* LTC256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117972470AA9200D7DAA7 /* LTC256.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1155B2470AA8E00D7DAA7 /* LTC256.h */; };
+		E4D117A42470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117A52470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117A62470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117A72470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117A82470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117A92470AA9200D7DAA7 /* LTCChainCom.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */; };
+		E4D117AD2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117AE2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117AF2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117B02470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117B12470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117B22470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */; };
+		E4D117B32470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B42470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B52470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B62470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B72470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B82470AA9200D7DAA7 /* LTCBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115622470AA8F00D7DAA7 /* LTCBlock.m */; };
+		E4D117B92470AA9200D7DAA7 /* LTCSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115632470AA8F00D7DAA7 /* LTCSignatureHashType.h */; };
+		E4D117BA2470AA9200D7DAA7 /* LTCSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115632470AA8F00D7DAA7 /* LTCSignatureHashType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117BB2470AA9300D7DAA7 /* LTCSignatureHashType.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115632470AA8F00D7DAA7 /* LTCSignatureHashType.h */; };
+		E4D117C22470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115652470AA8F00D7DAA7 /* LTCNumberFormatter.h */; };
+		E4D117C32470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115652470AA8F00D7DAA7 /* LTCNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117C42470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115652470AA8F00D7DAA7 /* LTCNumberFormatter.h */; };
+		E4D117C52470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115662470AA8F00D7DAA7 /* LTCTransactionBuilder.h */; };
+		E4D117C62470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115662470AA8F00D7DAA7 /* LTCTransactionBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117C72470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115662470AA8F00D7DAA7 /* LTCTransactionBuilder.h */; };
+		E4D117C82470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117C92470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117CA2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117CB2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117CC2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117CD2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */; };
+		E4D117CE2470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115682470AA8F00D7DAA7 /* LTCBlindSignature.h */; };
+		E4D117CF2470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115682470AA8F00D7DAA7 /* LTCBlindSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117D02470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115682470AA8F00D7DAA7 /* LTCBlindSignature.h */; };
+		E4D117D12470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115692470AA8F00D7DAA7 /* LTCPaymentMethod.h */; };
+		E4D117D22470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115692470AA8F00D7DAA7 /* LTCPaymentMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117D32470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D115692470AA8F00D7DAA7 /* LTCPaymentMethod.h */; };
+		E4D117D72470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117D82470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117D92470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117DA2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117DB2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117DC2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */; };
+		E4D117DD2470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117DE2470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117DF2470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117E02470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117E12470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117E22470AA9300D7DAA7 /* LTCProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */; };
+		E4D117E32470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1156D2470AA9000D7DAA7 /* LTCPaymentMethodRequest.h */; };
+		E4D117E42470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1156D2470AA9000D7DAA7 /* LTCPaymentMethodRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D117E52470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D1156D2470AA9000D7DAA7 /* LTCPaymentMethodRequest.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		757B241C1B03F1BF0084A9DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D2801A17B8FE00004A462B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206B0112183547C200878B8D;
+			remoteInfo = CoreBitcoinOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20148ADD18355D7200E68E9C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5B17B8FF47005AC9E6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		200FA8D91C07A8B80039029D /* BTCSecretSharingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCSecretSharingTests.swift; sourceTree = "<group>"; };
+		200FA8DB1C0CF8400039029D /* TestsSwiftBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestsSwiftBridgingHeader.h; sourceTree = "<group>"; };
+		20148ADF18355D7200E68E9C /* libCoreLitecoinIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreLitecoinIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148AE318355D7200E68E9C /* CoreLitecoinIOSlib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLitecoinIOSlib-Prefix.pch"; sourceTree = "<group>"; };
+		20148B2418355E8F00E68E9C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		20148B3718355F0100E68E9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		20148B3A18355F0100E68E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20148B3B18355F0100E68E9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		20148B3C18355F0100E68E9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		20148BFD183562C400E68E9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		20148C031835638200E68E9C /* CoreLitecoinIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLitecoinIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148C071835638200E68E9C /* CoreLitecoinIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreLitecoinIOS-Info.plist"; sourceTree = "<group>"; };
+		20148C091835638200E68E9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20148C0B1835638200E68E9C /* CoreLitecoinIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLitecoinIOS-Prefix.pch"; sourceTree = "<group>"; };
+		20148C9B183643AB00E68E9C /* libCoreLitecoinOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreLitecoinOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20148C9F183643AB00E68E9C /* CoreLitecoinOSXlib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLitecoinOSXlib-Prefix.pch"; sourceTree = "<group>"; };
+		20148CA8183643AB00E68E9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		20203ADD19F66B6E0085C01F /* MEME_GLOSSARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MEME_GLOSSARY.md; sourceTree = "<group>"; };
+		2039DB0117E2ED2B0051177B /* GLOSSARY.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = GLOSSARY.md; sourceTree = "<group>"; };
+		2039DB0217E2ED7F0051177B /* ScriptStringRepresentation.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScriptStringRepresentation.md; sourceTree = "<group>"; };
+		206B0113183547C200878B8D /* CoreLitecoinOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreLitecoinOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		206B011C183547C200878B8D /* CoreLitecoinOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreLitecoinOSX-Info.plist"; sourceTree = "<group>"; };
+		206B011E183547C200878B8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		206B0120183547C200878B8D /* CoreBitcoinOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreBitcoinOSX-Prefix.pch"; sourceTree = "<group>"; };
+		2084DD5D17B8FF47005AC9E6 /* UnitTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnitTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		2084DD6017B8FF47005AC9E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2084DD6317B8FF47005AC9E6 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		2084DD9417B8FF7E005AC9E6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		2084DD9517B8FFA2005AC9E6 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		2084DD9617B8FFA2005AC9E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2084DD9A17B90081005AC9E6 /* openssl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openssl; path = openssl/include/openssl; sourceTree = SOURCE_ROOT; };
+		2084DD9F17B90174005AC9E6 /* update_openssl.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_openssl.sh; sourceTree = SOURCE_ROOT; };
+		209818911839688D00541747 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		209818921839694000541747 /* CoreBitcoin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = CoreBitcoin.podspec; sourceTree = "<group>"; };
+		20A443D21AC941F7008B3447 /* ReleaseNotes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReleaseNotes.md; sourceTree = "<group>"; };
+		20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-ios.a"; path = "openssl/lib/libcrypto-ios.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-osx.a"; path = "openssl/lib/libcrypto-osx.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-ios.a"; path = "openssl/lib/libssl-ios.a"; sourceTree = SOURCE_ROOT; };
+		20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-osx.a"; path = "openssl/lib/libssl-osx.a"; sourceTree = SOURCE_ROOT; };
+		20C3F16817BFDCF8009DB89C /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		20D09B9B18B94D4B00794209 /* build_libraries.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = build_libraries.sh; path = ../build_libraries.sh; sourceTree = "<group>"; };
+		20D09B9C18BA12FE00794209 /* update_headers.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; name = update_headers.rb; path = ../update_headers.rb; sourceTree = "<group>"; };
+		20D09B9E18BA144C00794209 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		20D09BBA18BA29BB00794209 /* postprocess_openssl_includes_in_framework.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = postprocess_openssl_includes_in_framework.rb; sourceTree = SOURCE_ROOT; };
+		20D2802517B8FE00004A462B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20FFD7FF1B1F85F300CCA48D /* BTCPaymentProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCPaymentProtocolTests.swift; sourceTree = "<group>"; };
+		752834A81B699BEC00CD92E3 /* BTCScriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCScriptTests.swift; sourceTree = "<group>"; };
+		753118251B6042A400A102E2 /* BTCKeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCKeychainTests.swift; sourceTree = "<group>"; };
+		754564751B07F9AB008F34DC /* BTCBitcoinURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCBitcoinURLTests.swift; sourceTree = "<group>"; };
+		7549DAD01B0BB1D900F20FF0 /* BTCCurrencyConverterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCCurrencyConverterTests.swift; sourceTree = "<group>"; };
+		7558460D1B14E4B100E49C87 /* BTCEncryptedBackupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCEncryptedBackupTests.swift; sourceTree = "<group>"; };
+		757B24151B03F1BF0084A9DE /* CoreLitecoinTestsOSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLitecoinTestsOSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		757B24181B03F1BF0084A9DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758A16C71B69BAF30075C64A /* BTCScriptTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTCScriptTestData.h; path = ../CoreBitcoin/BTCScriptTestData.h; sourceTree = "<group>"; };
+		758C8C441C08F111000C1796 /* BTCBigNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCBigNumberTests.swift; sourceTree = "<group>"; };
+		758DDAFD1BD2D83600AEDFFB /* BTCMnemonicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCMnemonicTests.swift; sourceTree = "<group>"; };
+		75A06D9F1B17B7FE00ED7E79 /* BTCKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCKeyTests.swift; sourceTree = "<group>"; };
+		75A1A3711B0E7DB900EA8D45 /* BTCBlindSignatureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCBlindSignatureTests.swift; sourceTree = "<group>"; };
+		75AF30341C152B1D002187AF /* BTCProtocolSerializationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCProtocolSerializationTests.swift; sourceTree = "<group>"; };
+		75AF30361C152EE3002187AF /* BTCEncryptedMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCEncryptedMessageTests.swift; sourceTree = "<group>"; };
+		75AF303A1C153009002187AF /* BTCMerkleTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCMerkleTreeTests.swift; sourceTree = "<group>"; };
+		75B819051B04E65A0055F8B1 /* BTCAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCAddressTests.swift; sourceTree = "<group>"; };
+		75B819071B04E68B0055F8B1 /* BTCBlockchainInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCBlockchainInfoTests.swift; sourceTree = "<group>"; };
+		75B819091B04E69A0055F8B1 /* BTCPriceSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCPriceSourceTests.swift; sourceTree = "<group>"; };
+		75BBC6E41B0E721700A61690 /* BTCCurvePointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCCurvePointTests.swift; sourceTree = "<group>"; };
+		75BCBB651C08FADD00D5876A /* BTCBase58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCBase58Tests.swift; sourceTree = "<group>"; };
+		75BD89A31B46269E0073A611 /* BTCDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCDataTests.swift; sourceTree = "<group>"; };
+		75E565AD1B7927C800CCCFA5 /* BTCTransactionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCTransactionTests.swift; sourceTree = "<group>"; };
+		75EB9FF01B39C61500C26E70 /* BTC256Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTC256Tests.swift; sourceTree = "<group>"; };
+		75FB13E51B449661006D8935 /* BTCFancyEncryptedMessageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTCFancyEncryptedMessageTests.swift; sourceTree = "<group>"; };
+		E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPaymentProtocol.m; sourceTree = "<group>"; };
+		E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCScriptMachine.m; sourceTree = "<group>"; };
+		E4D114E22470AA8600D7DAA7 /* LTCMerkleTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCMerkleTree.h; sourceTree = "<group>"; };
+		E4D114E32470AA8600D7DAA7 /* LTCAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCAddress.h; sourceTree = "<group>"; };
+		E4D114E42470AA8600D7DAA7 /* LTCPriceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPriceSource.h; sourceTree = "<group>"; };
+		E4D114E62470AA8600D7DAA7 /* LTCBigNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBigNumber.h; sourceTree = "<group>"; };
+		E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPriceSource.m; sourceTree = "<group>"; };
+		E4D114E82470AA8600D7DAA7 /* LTCScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCScript.m; sourceTree = "<group>"; };
+		E4D114E92470AA8600D7DAA7 /* CoreLitecoin+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreLitecoin+Categories.h"; sourceTree = "<group>"; };
+		E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBase58.m; sourceTree = "<group>"; };
+		E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCOutpoint.m; sourceTree = "<group>"; };
+		E4D114EC2470AA8700D7DAA7 /* LTCScriptMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCScriptMachine.h; sourceTree = "<group>"; };
+		E4D114ED2470AA8700D7DAA7 /* LTCKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCKey.m; sourceTree = "<group>"; };
+		E4D114EE2470AA8700D7DAA7 /* LTCBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBase58.h; sourceTree = "<group>"; };
+		E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCNetwork.m; sourceTree = "<group>"; };
+		E4D114F12470AA8700D7DAA7 /* LTCChainCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCChainCom.h; sourceTree = "<group>"; };
+		E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCMnemonic.m; sourceTree = "<group>"; };
+		E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCProtocolSerialization.m; sourceTree = "<group>"; };
+		E4D114F52470AA8700D7DAA7 /* LTCAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCAddress.m; sourceTree = "<group>"; };
+		E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPaymentMethodDetails.m; sourceTree = "<group>"; };
+		E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCSecretSharing.m; sourceTree = "<group>"; };
+		E4D114F92470AA8800D7DAA7 /* LTCKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCKey.h; sourceTree = "<group>"; };
+		E4D114FA2470AA8800D7DAA7 /* LTCHashID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCHashID.h; sourceTree = "<group>"; };
+		E4D114FB2470AA8800D7DAA7 /* LTCProtocolSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCProtocolSerialization.h; sourceTree = "<group>"; };
+		E4D114FE2470AA8800D7DAA7 /* LTCErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCErrors.h; sourceTree = "<group>"; };
+		E4D114FF2470AA8800D7DAA7 /* LTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCData.h; sourceTree = "<group>"; };
+		E4D115002470AA8800D7DAA7 /* LTCProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCProcessor.h; sourceTree = "<group>"; };
+		E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LTCData.m"; sourceTree = "<group>"; };
+		E4D115042470AA8800D7DAA7 /* LTCAddressSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCAddressSubclass.h; sourceTree = "<group>"; };
+		E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBlockHeader.m; sourceTree = "<group>"; };
+		E4D115072470AA8900D7DAA7 /* LTCData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCData.m; sourceTree = "<group>"; };
+		E4D115082470AA8900D7DAA7 /* LTCFancyEncryptedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCFancyEncryptedMessage.h; sourceTree = "<group>"; };
+		E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NS+LTCBase58.m"; sourceTree = "<group>"; };
+		E4D1150A2470AA8900D7DAA7 /* LTCOpcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCOpcode.h; sourceTree = "<group>"; };
+		E4D1150C2470AA8900D7DAA7 /* LTCBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBlock.h; sourceTree = "<group>"; };
+		E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCEncryptedBackup.m; sourceTree = "<group>"; };
+		E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCTransaction.m; sourceTree = "<group>"; };
+		E4D115112470AA8900D7DAA7 /* LTCHashID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCHashID.m; sourceTree = "<group>"; };
+		E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBlockchainInfo.m; sourceTree = "<group>"; };
+		E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCProtocolBuffers.m; sourceTree = "<group>"; };
+		E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCOpcode.m; sourceTree = "<group>"; };
+		E4D115162470AA8A00D7DAA7 /* LTCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCNetwork.h; sourceTree = "<group>"; };
+		E4D115172470AA8A00D7DAA7 /* LTCUnitsAndLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCUnitsAndLimits.h; sourceTree = "<group>"; };
+		E4D115182470AA8A00D7DAA7 /* CoreLitecoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLitecoin.h; sourceTree = "<group>"; };
+		E4D115192470AA8A00D7DAA7 /* LTCScriptTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCScriptTestData.h; sourceTree = "<group>"; };
+		E4D1151A2470AA8A00D7DAA7 /* LTCOutpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCOutpoint.h; sourceTree = "<group>"; };
+		E4D1151B2470AA8A00D7DAA7 /* LTCTransactionInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCTransactionInput.h; sourceTree = "<group>"; };
+		E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCAssetAddress.m; sourceTree = "<group>"; };
+		E4D1151D2470AA8A00D7DAA7 /* LTCCurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCCurrencyConverter.h; sourceTree = "<group>"; };
+		E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCAssetID.m; sourceTree = "<group>"; };
+		E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCNumberFormatter.m; sourceTree = "<group>"; };
+		E4D115202470AA8A00D7DAA7 /* LTCBlockHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBlockHeader.h; sourceTree = "<group>"; };
+		E4D115212470AA8A00D7DAA7 /* LTCAssetID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCAssetID.h; sourceTree = "<group>"; };
+		E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCAssetType.m; sourceTree = "<group>"; };
+		E4D115232470AA8B00D7DAA7 /* LTCErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCErrors.m; sourceTree = "<group>"; };
+		E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCCurrencyConverter.m; sourceTree = "<group>"; };
+		E4D115262470AA8B00D7DAA7 /* NSData+LTCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LTCData.h"; sourceTree = "<group>"; };
+		E4D115272470AA8B00D7DAA7 /* LTCScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCScript.h; sourceTree = "<group>"; };
+		E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBigNumber.m; sourceTree = "<group>"; };
+		E4D1152B2470AA8B00D7DAA7 /* LTCAssetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCAssetAddress.h; sourceTree = "<group>"; };
+		E4D1152C2470AA8B00D7DAA7 /* LTCPaymentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPaymentProtocol.h; sourceTree = "<group>"; };
+		E4D1152E2470AA8B00D7DAA7 /* LTCProtocolBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCProtocolBuffers.h; sourceTree = "<group>"; };
+		E4D115322470AA8C00D7DAA7 /* NS+LTCBase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NS+LTCBase58.h"; sourceTree = "<group>"; };
+		E4D115332470AA8C00D7DAA7 /* LTCBitcoinURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBitcoinURL.h; sourceTree = "<group>"; };
+		E4D115352470AA8C00D7DAA7 /* LTCPaymentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPaymentRequest.h; sourceTree = "<group>"; };
+		E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCTransactionInput.m; sourceTree = "<group>"; };
+		E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBlindSignature.m; sourceTree = "<group>"; };
+		E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPaymentMethod.m; sourceTree = "<group>"; };
+		E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPaymentRequest.m; sourceTree = "<group>"; };
+		E4D1153C2470AA8C00D7DAA7 /* LTCTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCTransaction.h; sourceTree = "<group>"; };
+		E4D1153E2470AA8C00D7DAA7 /* LTCEncryptedMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCEncryptedMessage.h; sourceTree = "<group>"; };
+		E4D1153F2470AA8C00D7DAA7 /* LTCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCKeychain.h; sourceTree = "<group>"; };
+		E4D115412470AA8D00D7DAA7 /* LTCBlockchainInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBlockchainInfo.h; sourceTree = "<group>"; };
+		E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCCurvePoint.m; sourceTree = "<group>"; };
+		E4D115442470AA8D00D7DAA7 /* LTCTransactionOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCTransactionOutput.h; sourceTree = "<group>"; };
+		E4D115472470AA8D00D7DAA7 /* LTCSecretSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCSecretSharing.h; sourceTree = "<group>"; };
+		E4D115482470AA8D00D7DAA7 /* LTCEncryptedBackup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCEncryptedBackup.h; sourceTree = "<group>"; };
+		E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCMerkleTree.m; sourceTree = "<group>"; };
+		E4D1154A2470AA8D00D7DAA7 /* LTCCurvePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCCurvePoint.h; sourceTree = "<group>"; };
+		E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCKeychain.m; sourceTree = "<group>"; };
+		E4D115512470AA8E00D7DAA7 /* LTCPaymentMethodDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPaymentMethodDetails.h; sourceTree = "<group>"; };
+		E4D115532470AA8E00D7DAA7 /* LTCMnemonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCMnemonic.h; sourceTree = "<group>"; };
+		E4D115542470AA8E00D7DAA7 /* LTCAssetType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCAssetType.h; sourceTree = "<group>"; };
+		E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCFancyEncryptedMessage.m; sourceTree = "<group>"; };
+		E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBitcoinURL.m; sourceTree = "<group>"; };
+		E4D115592470AA8E00D7DAA7 /* LTC256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTC256.m; sourceTree = "<group>"; };
+		E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCPaymentMethodRequest.m; sourceTree = "<group>"; };
+		E4D1155B2470AA8E00D7DAA7 /* LTC256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTC256.h; sourceTree = "<group>"; };
+		E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCChainCom.m; sourceTree = "<group>"; };
+		E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCEncryptedMessage.m; sourceTree = "<group>"; };
+		E4D115622470AA8F00D7DAA7 /* LTCBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCBlock.m; sourceTree = "<group>"; };
+		E4D115632470AA8F00D7DAA7 /* LTCSignatureHashType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCSignatureHashType.h; sourceTree = "<group>"; };
+		E4D115652470AA8F00D7DAA7 /* LTCNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCNumberFormatter.h; sourceTree = "<group>"; };
+		E4D115662470AA8F00D7DAA7 /* LTCTransactionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCTransactionBuilder.h; sourceTree = "<group>"; };
+		E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCTransactionBuilder.m; sourceTree = "<group>"; };
+		E4D115682470AA8F00D7DAA7 /* LTCBlindSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCBlindSignature.h; sourceTree = "<group>"; };
+		E4D115692470AA8F00D7DAA7 /* LTCPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPaymentMethod.h; sourceTree = "<group>"; };
+		E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCTransactionOutput.m; sourceTree = "<group>"; };
+		E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTCProcessor.m; sourceTree = "<group>"; };
+		E4D1156D2470AA9000D7DAA7 /* LTCPaymentMethodRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTCPaymentMethodRequest.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20148ADC18355D7200E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C0DDB2183BC5E100A9EED0 /* libcrypto-ios.a in Frameworks */,
+				20148AE018355D7200E68E9C /* Foundation.framework in Frameworks */,
+				20C0DDB3183BC5E100A9EED0 /* libssl-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C001835638200E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C0DDB5183BC5E200A9EED0 /* libssl-ios.a in Frameworks */,
+				20C0DDB4183BC5E200A9EED0 /* libcrypto-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C98183643AB00E68E9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20148C9C183643AB00E68E9C /* Cocoa.framework in Frameworks */,
+				20C0DDB7183BC5E900A9EED0 /* libssl-osx.a in Frameworks */,
+				20C0DDB6183BC5E900A9EED0 /* libcrypto-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B010F183547C200878B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209F27C11AE538F80092A1FB /* Security.framework in Frameworks */,
+				20C0DDB8183BC5EA00A9EED0 /* libcrypto-osx.a in Frameworks */,
+				20C0DDB9183BC5EA00A9EED0 /* libssl-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5A17B8FF47005AC9E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C3F16917BFDCF8009DB89C /* libSystem.dylib in Frameworks */,
+				20C0DDBB183BC5EB00A9EED0 /* libssl-osx.a in Frameworks */,
+				20C0DDBA183BC5EB00A9EED0 /* libcrypto-osx.a in Frameworks */,
+				2084DD5E17B8FF47005AC9E6 /* Foundation.framework in Frameworks */,
+				2084DD9817B8FFA2005AC9E6 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24121B03F1BF0084A9DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757B241B1B03F1BF0084A9DE /* CoreLitecoinOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20148AE118355D7200E68E9C /* CoreLitecoinIOSlib */ = {
+			isa = PBXGroup;
+			children = (
+				20148AE218355D7200E68E9C /* Supporting Files */,
+			);
+			path = CoreLitecoinIOSlib;
+			sourceTree = "<group>";
+		};
+		20148AE218355D7200E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20148AE318355D7200E68E9C /* CoreLitecoinIOSlib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20148B3918355F0100E68E9C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20148B3A18355F0100E68E9C /* Foundation.framework */,
+				20148B3B18355F0100E68E9C /* CoreData.framework */,
+				20148B3C18355F0100E68E9C /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		20148C051835638200E68E9C /* CoreLitecoinIOS */ = {
+			isa = PBXGroup;
+			children = (
+				20148C061835638200E68E9C /* Supporting Files */,
+			);
+			path = CoreLitecoinIOS;
+			sourceTree = "<group>";
+		};
+		20148C061835638200E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20148C071835638200E68E9C /* CoreLitecoinIOS-Info.plist */,
+				20148C081835638200E68E9C /* InfoPlist.strings */,
+				20148C0B1835638200E68E9C /* CoreLitecoinIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20148C9D183643AB00E68E9C /* CoreLitecoinOSXlib */ = {
+			isa = PBXGroup;
+			children = (
+				20148C9E183643AB00E68E9C /* Supporting Files */,
+			);
+			path = CoreLitecoinOSXlib;
+			sourceTree = "<group>";
+		};
+		20148C9E183643AB00E68E9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20148C9F183643AB00E68E9C /* CoreLitecoinOSXlib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		206B011A183547C200878B8D /* CoreLitecoinOSX */ = {
+			isa = PBXGroup;
+			children = (
+				206B011B183547C200878B8D /* Supporting Files */,
+			);
+			path = CoreLitecoinOSX;
+			sourceTree = "<group>";
+		};
+		206B011B183547C200878B8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206B011C183547C200878B8D /* CoreLitecoinOSX-Info.plist */,
+				206B011D183547C200878B8D /* InfoPlist.strings */,
+				206B0120183547C200878B8D /* CoreBitcoinOSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2084DD5F17B8FF47005AC9E6 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2084DD6017B8FF47005AC9E6 /* main.m */,
+				2084DD6317B8FF47005AC9E6 /* UnitTests-Prefix.pch */,
+				2084DD6217B8FF47005AC9E6 /* Transactions */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		2084DD6217B8FF47005AC9E6 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Transactions;
+			sourceTree = "<group>";
+		};
+		2084DD9917B8FFB0005AC9E6 /* OpenSSL */ = {
+			isa = PBXGroup;
+			children = (
+				20C0DDAE183BC5DB00A9EED0 /* libcrypto-ios.a */,
+				20C0DDAF183BC5DB00A9EED0 /* libcrypto-osx.a */,
+				20C0DDB0183BC5DB00A9EED0 /* libssl-ios.a */,
+				20C0DDB1183BC5DB00A9EED0 /* libssl-osx.a */,
+				2084DD9A17B90081005AC9E6 /* openssl */,
+			);
+			name = OpenSSL;
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		20D09B9D18BA130600794209 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20D09B9E18BA144C00794209 /* .gitignore */,
+				2084DD9F17B90174005AC9E6 /* update_openssl.sh */,
+				20D09B9C18BA12FE00794209 /* update_headers.rb */,
+				20D09B9B18B94D4B00794209 /* build_libraries.sh */,
+				20D09BBA18BA29BB00794209 /* postprocess_openssl_includes_in_framework.rb */,
+			);
+			name = Utils;
+			path = CoreBitcoin;
+			sourceTree = "<group>";
+		};
+		20D2801917B8FE00004A462B = {
+			isa = PBXGroup;
+			children = (
+				2084DD9417B8FF7E005AC9E6 /* README.md */,
+				20A443D21AC941F7008B3447 /* ReleaseNotes.md */,
+				2039DB0117E2ED2B0051177B /* GLOSSARY.md */,
+				20203ADD19F66B6E0085C01F /* MEME_GLOSSARY.md */,
+				209818911839688D00541747 /* LICENSE.txt */,
+				2039DB0217E2ED7F0051177B /* ScriptStringRepresentation.md */,
+				209818921839694000541747 /* CoreBitcoin.podspec */,
+				20D2802717B8FE00004A462B /* CoreLitecoin */,
+				2084DD9917B8FFB0005AC9E6 /* OpenSSL */,
+				20D09B9D18BA130600794209 /* Utils */,
+				2084DD5F17B8FF47005AC9E6 /* UnitTests */,
+				206B011A183547C200878B8D /* CoreLitecoinOSX */,
+				20148AE118355D7200E68E9C /* CoreLitecoinIOSlib */,
+				20148C051835638200E68E9C /* CoreLitecoinIOS */,
+				20148C9D183643AB00E68E9C /* CoreLitecoinOSXlib */,
+				757B24161B03F1BF0084A9DE /* CoreLitecoinTestsOSX */,
+				20D2802417B8FE00004A462B /* Frameworks */,
+				20D2802317B8FE00004A462B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20D2802317B8FE00004A462B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2084DD5D17B8FF47005AC9E6 /* UnitTests */,
+				206B0113183547C200878B8D /* CoreLitecoinOSX.framework */,
+				20148ADF18355D7200E68E9C /* libCoreLitecoinIOS.a */,
+				20148C031835638200E68E9C /* CoreLitecoinIOS.framework */,
+				20148C9B183643AB00E68E9C /* libCoreLitecoinOSX.a */,
+				757B24151B03F1BF0084A9DE /* CoreLitecoinTestsOSX.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D2802417B8FE00004A462B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20148BFD183562C400E68E9C /* Foundation.framework */,
+				20C3F16817BFDCF8009DB89C /* libSystem.dylib */,
+				2084DD9517B8FFA2005AC9E6 /* libcommonCrypto.dylib */,
+				2084DD9617B8FFA2005AC9E6 /* Security.framework */,
+				20D2802517B8FE00004A462B /* Foundation.framework */,
+				20148B2418355E8F00E68E9C /* CoreFoundation.framework */,
+				20148B3718355F0100E68E9C /* Cocoa.framework */,
+				20148CA8183643AB00E68E9C /* XCTest.framework */,
+				20148B3918355F0100E68E9C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20D2802717B8FE00004A462B /* CoreLitecoin */ = {
+			isa = PBXGroup;
+			children = (
+				E4D115182470AA8A00D7DAA7 /* CoreLitecoin.h */,
+				E4D114E92470AA8600D7DAA7 /* CoreLitecoin+Categories.h */,
+				E4D1155B2470AA8E00D7DAA7 /* LTC256.h */,
+				E4D115592470AA8E00D7DAA7 /* LTC256.m */,
+				E4D114E32470AA8600D7DAA7 /* LTCAddress.h */,
+				E4D114F52470AA8700D7DAA7 /* LTCAddress.m */,
+				E4D115042470AA8800D7DAA7 /* LTCAddressSubclass.h */,
+				E4D1152B2470AA8B00D7DAA7 /* LTCAssetAddress.h */,
+				E4D1151C2470AA8A00D7DAA7 /* LTCAssetAddress.m */,
+				E4D115212470AA8A00D7DAA7 /* LTCAssetID.h */,
+				E4D1151E2470AA8A00D7DAA7 /* LTCAssetID.m */,
+				E4D115542470AA8E00D7DAA7 /* LTCAssetType.h */,
+				E4D115222470AA8A00D7DAA7 /* LTCAssetType.m */,
+				E4D114EE2470AA8700D7DAA7 /* LTCBase58.h */,
+				E4D114EA2470AA8700D7DAA7 /* LTCBase58.m */,
+				E4D114E62470AA8600D7DAA7 /* LTCBigNumber.h */,
+				E4D1152A2470AA8B00D7DAA7 /* LTCBigNumber.m */,
+				E4D115332470AA8C00D7DAA7 /* LTCBitcoinURL.h */,
+				E4D115582470AA8E00D7DAA7 /* LTCBitcoinURL.m */,
+				E4D115682470AA8F00D7DAA7 /* LTCBlindSignature.h */,
+				E4D115382470AA8C00D7DAA7 /* LTCBlindSignature.m */,
+				E4D1150C2470AA8900D7DAA7 /* LTCBlock.h */,
+				E4D115622470AA8F00D7DAA7 /* LTCBlock.m */,
+				E4D115412470AA8D00D7DAA7 /* LTCBlockchainInfo.h */,
+				E4D115122470AA8900D7DAA7 /* LTCBlockchainInfo.m */,
+				E4D115202470AA8A00D7DAA7 /* LTCBlockHeader.h */,
+				E4D115052470AA8800D7DAA7 /* LTCBlockHeader.m */,
+				E4D114F12470AA8700D7DAA7 /* LTCChainCom.h */,
+				E4D1155F2470AA8F00D7DAA7 /* LTCChainCom.m */,
+				E4D1151D2470AA8A00D7DAA7 /* LTCCurrencyConverter.h */,
+				E4D115242470AA8B00D7DAA7 /* LTCCurrencyConverter.m */,
+				E4D1154A2470AA8D00D7DAA7 /* LTCCurvePoint.h */,
+				E4D115432470AA8D00D7DAA7 /* LTCCurvePoint.m */,
+				E4D114FF2470AA8800D7DAA7 /* LTCData.h */,
+				E4D115072470AA8900D7DAA7 /* LTCData.m */,
+				E4D115482470AA8D00D7DAA7 /* LTCEncryptedBackup.h */,
+				E4D1150D2470AA8900D7DAA7 /* LTCEncryptedBackup.m */,
+				E4D1153E2470AA8C00D7DAA7 /* LTCEncryptedMessage.h */,
+				E4D115612470AA8F00D7DAA7 /* LTCEncryptedMessage.m */,
+				E4D114FE2470AA8800D7DAA7 /* LTCErrors.h */,
+				E4D115232470AA8B00D7DAA7 /* LTCErrors.m */,
+				E4D115082470AA8900D7DAA7 /* LTCFancyEncryptedMessage.h */,
+				E4D115572470AA8E00D7DAA7 /* LTCFancyEncryptedMessage.m */,
+				E4D114FA2470AA8800D7DAA7 /* LTCHashID.h */,
+				E4D115112470AA8900D7DAA7 /* LTCHashID.m */,
+				E4D114F92470AA8800D7DAA7 /* LTCKey.h */,
+				E4D114ED2470AA8700D7DAA7 /* LTCKey.m */,
+				E4D1153F2470AA8C00D7DAA7 /* LTCKeychain.h */,
+				E4D1154D2470AA8D00D7DAA7 /* LTCKeychain.m */,
+				E4D114E22470AA8600D7DAA7 /* LTCMerkleTree.h */,
+				E4D115492470AA8D00D7DAA7 /* LTCMerkleTree.m */,
+				E4D115532470AA8E00D7DAA7 /* LTCMnemonic.h */,
+				E4D114F22470AA8700D7DAA7 /* LTCMnemonic.m */,
+				E4D115162470AA8A00D7DAA7 /* LTCNetwork.h */,
+				E4D114F02470AA8700D7DAA7 /* LTCNetwork.m */,
+				E4D115652470AA8F00D7DAA7 /* LTCNumberFormatter.h */,
+				E4D1151F2470AA8A00D7DAA7 /* LTCNumberFormatter.m */,
+				E4D1150A2470AA8900D7DAA7 /* LTCOpcode.h */,
+				E4D115152470AA8A00D7DAA7 /* LTCOpcode.m */,
+				E4D1151A2470AA8A00D7DAA7 /* LTCOutpoint.h */,
+				E4D114EB2470AA8700D7DAA7 /* LTCOutpoint.m */,
+				E4D115692470AA8F00D7DAA7 /* LTCPaymentMethod.h */,
+				E4D1153A2470AA8C00D7DAA7 /* LTCPaymentMethod.m */,
+				E4D115512470AA8E00D7DAA7 /* LTCPaymentMethodDetails.h */,
+				E4D114F62470AA8700D7DAA7 /* LTCPaymentMethodDetails.m */,
+				E4D1156D2470AA9000D7DAA7 /* LTCPaymentMethodRequest.h */,
+				E4D1155A2470AA8E00D7DAA7 /* LTCPaymentMethodRequest.m */,
+				E4D1152C2470AA8B00D7DAA7 /* LTCPaymentProtocol.h */,
+				E4D114E02470AA8600D7DAA7 /* LTCPaymentProtocol.m */,
+				E4D115352470AA8C00D7DAA7 /* LTCPaymentRequest.h */,
+				E4D1153B2470AA8C00D7DAA7 /* LTCPaymentRequest.m */,
+				E4D114E42470AA8600D7DAA7 /* LTCPriceSource.h */,
+				E4D114E72470AA8600D7DAA7 /* LTCPriceSource.m */,
+				E4D115002470AA8800D7DAA7 /* LTCProcessor.h */,
+				E4D1156C2470AA9000D7DAA7 /* LTCProcessor.m */,
+				E4D1152E2470AA8B00D7DAA7 /* LTCProtocolBuffers.h */,
+				E4D115142470AA8A00D7DAA7 /* LTCProtocolBuffers.m */,
+				E4D114FB2470AA8800D7DAA7 /* LTCProtocolSerialization.h */,
+				E4D114F32470AA8700D7DAA7 /* LTCProtocolSerialization.m */,
+				E4D115272470AA8B00D7DAA7 /* LTCScript.h */,
+				E4D114E82470AA8600D7DAA7 /* LTCScript.m */,
+				E4D114EC2470AA8700D7DAA7 /* LTCScriptMachine.h */,
+				E4D114E12470AA8600D7DAA7 /* LTCScriptMachine.m */,
+				E4D115192470AA8A00D7DAA7 /* LTCScriptTestData.h */,
+				E4D115472470AA8D00D7DAA7 /* LTCSecretSharing.h */,
+				E4D114F72470AA8700D7DAA7 /* LTCSecretSharing.m */,
+				E4D115632470AA8F00D7DAA7 /* LTCSignatureHashType.h */,
+				E4D1153C2470AA8C00D7DAA7 /* LTCTransaction.h */,
+				E4D1150F2470AA8900D7DAA7 /* LTCTransaction.m */,
+				E4D115662470AA8F00D7DAA7 /* LTCTransactionBuilder.h */,
+				E4D115672470AA8F00D7DAA7 /* LTCTransactionBuilder.m */,
+				E4D1151B2470AA8A00D7DAA7 /* LTCTransactionInput.h */,
+				E4D115372470AA8C00D7DAA7 /* LTCTransactionInput.m */,
+				E4D115442470AA8D00D7DAA7 /* LTCTransactionOutput.h */,
+				E4D1156B2470AA8F00D7DAA7 /* LTCTransactionOutput.m */,
+				E4D115172470AA8A00D7DAA7 /* LTCUnitsAndLimits.h */,
+				E4D115322470AA8C00D7DAA7 /* NS+LTCBase58.h */,
+				E4D115092470AA8900D7DAA7 /* NS+LTCBase58.m */,
+				E4D115262470AA8B00D7DAA7 /* NSData+LTCData.h */,
+				E4D115012470AA8800D7DAA7 /* NSData+LTCData.m */,
+			);
+			path = CoreLitecoin;
+			sourceTree = "<group>";
+		};
+		757B24161B03F1BF0084A9DE /* CoreLitecoinTestsOSX */ = {
+			isa = PBXGroup;
+			children = (
+				75AF303A1C153009002187AF /* BTCMerkleTreeTests.swift */,
+				75AF30361C152EE3002187AF /* BTCEncryptedMessageTests.swift */,
+				75AF30341C152B1D002187AF /* BTCProtocolSerializationTests.swift */,
+				758A16C71B69BAF30075C64A /* BTCScriptTestData.h */,
+				200FA8DB1C0CF8400039029D /* TestsSwiftBridgingHeader.h */,
+				75BCBB651C08FADD00D5876A /* BTCBase58Tests.swift */,
+				758C8C441C08F111000C1796 /* BTCBigNumberTests.swift */,
+				758DDAFD1BD2D83600AEDFFB /* BTCMnemonicTests.swift */,
+				75E565AD1B7927C800CCCFA5 /* BTCTransactionTests.swift */,
+				752834A81B699BEC00CD92E3 /* BTCScriptTests.swift */,
+				753118251B6042A400A102E2 /* BTCKeychainTests.swift */,
+				75BD89A31B46269E0073A611 /* BTCDataTests.swift */,
+				75FB13E51B449661006D8935 /* BTCFancyEncryptedMessageTests.swift */,
+				75EB9FF01B39C61500C26E70 /* BTC256Tests.swift */,
+				75A06D9F1B17B7FE00ED7E79 /* BTCKeyTests.swift */,
+				7558460D1B14E4B100E49C87 /* BTCEncryptedBackupTests.swift */,
+				75A1A3711B0E7DB900EA8D45 /* BTCBlindSignatureTests.swift */,
+				75BBC6E41B0E721700A61690 /* BTCCurvePointTests.swift */,
+				7549DAD01B0BB1D900F20FF0 /* BTCCurrencyConverterTests.swift */,
+				754564751B07F9AB008F34DC /* BTCBitcoinURLTests.swift */,
+				75B819091B04E69A0055F8B1 /* BTCPriceSourceTests.swift */,
+				75B819071B04E68B0055F8B1 /* BTCBlockchainInfoTests.swift */,
+				75B819051B04E65A0055F8B1 /* BTCAddressTests.swift */,
+				20FFD7FF1B1F85F300CCA48D /* BTCPaymentProtocolTests.swift */,
+				200FA8D91C07A8B80039029D /* BTCSecretSharingTests.swift */,
+				757B24171B03F1BF0084A9DE /* Supporting Files */,
+			);
+			path = CoreLitecoinTestsOSX;
+			sourceTree = "<group>";
+		};
+		757B24171B03F1BF0084A9DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				757B24181B03F1BF0084A9DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20148C29183564DE00E68E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1163D2470AA9100D7DAA7 /* LTCBlock.h in Headers */,
+				E4D117D22470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */,
+				E4D117302470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */,
+				E4D1157D2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */,
+				E4D117C32470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */,
+				E4D116732470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */,
+				E4D116162470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */,
+				E4D116E52470AA9100D7DAA7 /* LTCBitcoinURL.h in Headers */,
+				E4D116E22470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */,
+				E4D116B52470AA9100D7DAA7 /* LTCScript.h in Headers */,
+				E4D117CF2470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */,
+				E4D115EF2470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */,
+				E4D116C42470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */,
+				E4D115C22470AA9000D7DAA7 /* LTCChainCom.h in Headers */,
+				E4D116EB2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */,
+				E4D115FE2470AA9000D7DAA7 /* LTCErrors.h in Headers */,
+				E4D115EC2470AA9000D7DAA7 /* LTCHashID.h in Headers */,
+				E4D115E92470AA9000D7DAA7 /* LTCKey.h in Headers */,
+				E4D117E42470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */,
+				E4D115832470AA9000D7DAA7 /* LTCPriceSource.h in Headers */,
+				E4D116792470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */,
+				E4D117C62470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */,
+				E4D117722470AA9200D7DAA7 /* LTCAssetType.h in Headers */,
+				E4D1159B2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */,
+				E4D117212470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */,
+				E4D115AA2470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */,
+				E4D116882470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */,
+				E4D1173C2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */,
+				E4D115B32470AA9000D7DAA7 /* LTCBase58.h in Headers */,
+				E4D117482470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */,
+				E4D116042470AA9000D7DAA7 /* LTCProcessor.h in Headers */,
+				E4D1167C2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */,
+				E4D116762470AA9100D7DAA7 /* CoreLitecoin.h in Headers */,
+				E4D116D02470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */,
+				E4D1173F2470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */,
+				E4D117182470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */,
+				E4D116702470AA9100D7DAA7 /* LTCNetwork.h in Headers */,
+				E4D1171B2470AA9200D7DAA7 /* LTCKeychain.h in Headers */,
+				20148C411835651C00E68E9C /* openssl in Headers */,
+				E4D117BA2470AA9200D7DAA7 /* LTCSignatureHashType.h in Headers */,
+				E4D1169A2470AA9100D7DAA7 /* LTCAssetID.h in Headers */,
+				E4D116012470AA9000D7DAA7 /* LTCData.h in Headers */,
+				E4D116C72470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */,
+				E4D116B22470AA9100D7DAA7 /* NSData+LTCData.h in Headers */,
+				E4D1176F2470AA9200D7DAA7 /* LTCMnemonic.h in Headers */,
+				E4D117692470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */,
+				E4D1167F2470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */,
+				E4D1162B2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */,
+				E4D115802470AA9000D7DAA7 /* LTCAddress.h in Headers */,
+				E4D116342470AA9100D7DAA7 /* LTCOpcode.h in Headers */,
+				E4D116972470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */,
+				E4D117962470AA9200D7DAA7 /* LTC256.h in Headers */,
+				E4D1158C2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */,
+				E4D1170F2470AA9200D7DAA7 /* LTCTransaction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C99183643AB00E68E9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1163E2470AA9100D7DAA7 /* LTCBlock.h in Headers */,
+				E4D117D32470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */,
+				E4D117312470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */,
+				E4D1157E2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */,
+				E4D117C42470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */,
+				E4D116742470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */,
+				E4D116172470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */,
+				E4D116E62470AA9200D7DAA7 /* LTCBitcoinURL.h in Headers */,
+				E4D116E32470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */,
+				E4D116B62470AA9100D7DAA7 /* LTCScript.h in Headers */,
+				E4D117D02470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */,
+				E4D115F02470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */,
+				E4D116C52470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */,
+				E4D115C32470AA9000D7DAA7 /* LTCChainCom.h in Headers */,
+				E4D116EC2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */,
+				E4D115FF2470AA9000D7DAA7 /* LTCErrors.h in Headers */,
+				E4D115ED2470AA9000D7DAA7 /* LTCHashID.h in Headers */,
+				E4D115EA2470AA9000D7DAA7 /* LTCKey.h in Headers */,
+				E4D117E52470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */,
+				E4D115842470AA9000D7DAA7 /* LTCPriceSource.h in Headers */,
+				E4D1167A2470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */,
+				E4D117C72470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */,
+				E4D117732470AA9200D7DAA7 /* LTCAssetType.h in Headers */,
+				E4D1159C2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */,
+				E4D117222470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */,
+				E4D115AB2470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */,
+				E4D116892470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */,
+				E4D1173D2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */,
+				E4D115B42470AA9000D7DAA7 /* LTCBase58.h in Headers */,
+				E4D117492470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */,
+				E4D116052470AA9000D7DAA7 /* LTCProcessor.h in Headers */,
+				E4D1167D2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */,
+				E4D116772470AA9100D7DAA7 /* CoreLitecoin.h in Headers */,
+				E4D116D12470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */,
+				E4D117402470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */,
+				E4D117192470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */,
+				E4D116712470AA9100D7DAA7 /* LTCNetwork.h in Headers */,
+				E4D1171C2470AA9200D7DAA7 /* LTCKeychain.h in Headers */,
+				20148CEB1836446500E68E9C /* openssl in Headers */,
+				E4D117BB2470AA9300D7DAA7 /* LTCSignatureHashType.h in Headers */,
+				E4D1169B2470AA9100D7DAA7 /* LTCAssetID.h in Headers */,
+				E4D116022470AA9000D7DAA7 /* LTCData.h in Headers */,
+				E4D116C82470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */,
+				E4D116B32470AA9100D7DAA7 /* NSData+LTCData.h in Headers */,
+				E4D117702470AA9200D7DAA7 /* LTCMnemonic.h in Headers */,
+				E4D1176A2470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */,
+				E4D116802470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */,
+				E4D1162C2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */,
+				E4D115812470AA9000D7DAA7 /* LTCAddress.h in Headers */,
+				E4D116352470AA9100D7DAA7 /* LTCOpcode.h in Headers */,
+				E4D116982470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */,
+				E4D117972470AA9200D7DAA7 /* LTC256.h in Headers */,
+				E4D1158D2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */,
+				E4D117102470AA9200D7DAA7 /* LTCTransaction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B0110183547C200878B8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1163C2470AA9100D7DAA7 /* LTCBlock.h in Headers */,
+				E4D117D12470AA9300D7DAA7 /* LTCPaymentMethod.h in Headers */,
+				E4D1172F2470AA9200D7DAA7 /* LTCTransactionOutput.h in Headers */,
+				E4D1157C2470AA9000D7DAA7 /* LTCMerkleTree.h in Headers */,
+				E4D117C22470AA9300D7DAA7 /* LTCNumberFormatter.h in Headers */,
+				E4D116722470AA9100D7DAA7 /* LTCUnitsAndLimits.h in Headers */,
+				E4D116152470AA9100D7DAA7 /* LTCAddressSubclass.h in Headers */,
+				E4D116E42470AA9100D7DAA7 /* LTCBitcoinURL.h in Headers */,
+				E4D116E12470AA9100D7DAA7 /* NS+LTCBase58.h in Headers */,
+				E4D116B42470AA9100D7DAA7 /* LTCScript.h in Headers */,
+				E4D117CE2470AA9300D7DAA7 /* LTCBlindSignature.h in Headers */,
+				E4D115EE2470AA9000D7DAA7 /* LTCProtocolSerialization.h in Headers */,
+				E4D116C32470AA9100D7DAA7 /* LTCAssetAddress.h in Headers */,
+				E4D115C12470AA9000D7DAA7 /* LTCChainCom.h in Headers */,
+				E4D116EA2470AA9200D7DAA7 /* LTCPaymentRequest.h in Headers */,
+				E4D115FD2470AA9000D7DAA7 /* LTCErrors.h in Headers */,
+				E4D115EB2470AA9000D7DAA7 /* LTCHashID.h in Headers */,
+				E4D115E82470AA9000D7DAA7 /* LTCKey.h in Headers */,
+				E4D117E32470AA9300D7DAA7 /* LTCPaymentMethodRequest.h in Headers */,
+				E4D115822470AA9000D7DAA7 /* LTCPriceSource.h in Headers */,
+				E4D116782470AA9100D7DAA7 /* LTCScriptTestData.h in Headers */,
+				E4D117C52470AA9300D7DAA7 /* LTCTransactionBuilder.h in Headers */,
+				E4D117712470AA9200D7DAA7 /* LTCAssetType.h in Headers */,
+				E4D1159A2470AA9000D7DAA7 /* CoreLitecoin+Categories.h in Headers */,
+				E4D117202470AA9200D7DAA7 /* LTCBlockchainInfo.h in Headers */,
+				E4D115A92470AA9000D7DAA7 /* LTCScriptMachine.h in Headers */,
+				E4D116872470AA9100D7DAA7 /* LTCCurrencyConverter.h in Headers */,
+				E4D1173B2470AA9200D7DAA7 /* LTCSecretSharing.h in Headers */,
+				E4D115B22470AA9000D7DAA7 /* LTCBase58.h in Headers */,
+				E4D117472470AA9200D7DAA7 /* LTCCurvePoint.h in Headers */,
+				E4D116032470AA9000D7DAA7 /* LTCProcessor.h in Headers */,
+				E4D1167B2470AA9100D7DAA7 /* LTCOutpoint.h in Headers */,
+				E4D116752470AA9100D7DAA7 /* CoreLitecoin.h in Headers */,
+				E4D116CF2470AA9100D7DAA7 /* LTCProtocolBuffers.h in Headers */,
+				E4D1173E2470AA9200D7DAA7 /* LTCEncryptedBackup.h in Headers */,
+				E4D117172470AA9200D7DAA7 /* LTCEncryptedMessage.h in Headers */,
+				E4D1166F2470AA9100D7DAA7 /* LTCNetwork.h in Headers */,
+				E4D1171A2470AA9200D7DAA7 /* LTCKeychain.h in Headers */,
+				206B016A1835487700878B8D /* openssl in Headers */,
+				E4D117B92470AA9200D7DAA7 /* LTCSignatureHashType.h in Headers */,
+				E4D116992470AA9100D7DAA7 /* LTCAssetID.h in Headers */,
+				E4D116002470AA9000D7DAA7 /* LTCData.h in Headers */,
+				E4D116C62470AA9100D7DAA7 /* LTCPaymentProtocol.h in Headers */,
+				E4D116B12470AA9100D7DAA7 /* NSData+LTCData.h in Headers */,
+				E4D1176E2470AA9200D7DAA7 /* LTCMnemonic.h in Headers */,
+				E4D117682470AA9200D7DAA7 /* LTCPaymentMethodDetails.h in Headers */,
+				E4D1167E2470AA9100D7DAA7 /* LTCTransactionInput.h in Headers */,
+				E4D1162A2470AA9100D7DAA7 /* LTCFancyEncryptedMessage.h in Headers */,
+				E4D1157F2470AA9000D7DAA7 /* LTCAddress.h in Headers */,
+				E4D116332470AA9100D7DAA7 /* LTCOpcode.h in Headers */,
+				E4D116962470AA9100D7DAA7 /* LTCBlockHeader.h in Headers */,
+				E4D117952470AA9200D7DAA7 /* LTC256.h in Headers */,
+				E4D1158B2470AA9000D7DAA7 /* LTCBigNumber.h in Headers */,
+				E4D1170E2470AA9200D7DAA7 /* LTCTransaction.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20148ADE18355D7200E68E9C /* CoreLitecoinIOSlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148AFD18355D7200E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinIOSlib" */;
+			buildPhases = (
+				20148ADB18355D7200E68E9C /* Sources */,
+				20148ADC18355D7200E68E9C /* Frameworks */,
+				20148ADD18355D7200E68E9C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLitecoinIOSlib;
+			productName = CoreBitcoinIOSlib;
+			productReference = 20148ADF18355D7200E68E9C /* libCoreLitecoinIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		20148C021835638200E68E9C /* CoreLitecoinIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148C0C1835638200E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinIOS" */;
+			buildPhases = (
+				20148BFF1835638200E68E9C /* Sources */,
+				20148C001835638200E68E9C /* Frameworks */,
+				20148C011835638200E68E9C /* Resources */,
+				20148C29183564DE00E68E9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLitecoinIOS;
+			productName = CoreBitcoinIOS;
+			productReference = 20148C031835638200E68E9C /* CoreLitecoinIOS.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		20148C9A183643AB00E68E9C /* CoreLitecoinOSXlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20148CBA183643AB00E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinOSXlib" */;
+			buildPhases = (
+				20148C97183643AB00E68E9C /* Sources */,
+				20148C98183643AB00E68E9C /* Frameworks */,
+				20148C99183643AB00E68E9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLitecoinOSXlib;
+			productName = CoreBitcoinOSXlib;
+			productReference = 20148C9B183643AB00E68E9C /* libCoreLitecoinOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		206B0112183547C200878B8D /* CoreLitecoinOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206B013B183547C300878B8D /* Build configuration list for PBXNativeTarget "CoreLitecoinOSX" */;
+			buildPhases = (
+				206B010E183547C200878B8D /* Sources */,
+				206B010F183547C200878B8D /* Frameworks */,
+				206B0110183547C200878B8D /* Headers */,
+				206B0111183547C200878B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLitecoinOSX;
+			productName = CoreBitcoinOSX;
+			productReference = 206B0113183547C200878B8D /* CoreLitecoinOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2084DD5C17B8FF47005AC9E6 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2084DD6617B8FF47005AC9E6 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				2084DD5917B8FF47005AC9E6 /* Sources */,
+				2084DD5A17B8FF47005AC9E6 /* Frameworks */,
+				2084DD5B17B8FF47005AC9E6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 2084DD5D17B8FF47005AC9E6 /* UnitTests */;
+			productType = "com.apple.product-type.tool";
+		};
+		757B24141B03F1BF0084A9DE /* CoreLitecoinTestsOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757B24201B03F1BF0084A9DE /* Build configuration list for PBXNativeTarget "CoreLitecoinTestsOSX" */;
+			buildPhases = (
+				757B24111B03F1BF0084A9DE /* Sources */,
+				757B24121B03F1BF0084A9DE /* Frameworks */,
+				757B24131B03F1BF0084A9DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				757B241D1B03F1BF0084A9DE /* PBXTargetDependency */,
+			);
+			name = CoreLitecoinTestsOSX;
+			productName = CoreBitcoinTestsOSX;
+			productReference = 757B24151B03F1BF0084A9DE /* CoreLitecoinTestsOSX.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D2801A17B8FE00004A462B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oleg Andreev";
+				TargetAttributes = {
+					20148C021835638200E68E9C = {
+						DevelopmentTeam = Q7Q43CUMWT;
+					};
+					757B24141B03F1BF0084A9DE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 20D2801D17B8FE00004A462B /* Build configuration list for PBXProject "CoreLitecoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 20D2801917B8FE00004A462B;
+			productRefGroup = 20D2802317B8FE00004A462B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2084DD5C17B8FF47005AC9E6 /* UnitTests */,
+				206B0112183547C200878B8D /* CoreLitecoinOSX */,
+				20148ADE18355D7200E68E9C /* CoreLitecoinIOSlib */,
+				20148C021835638200E68E9C /* CoreLitecoinIOS */,
+				20148C9A183643AB00E68E9C /* CoreLitecoinOSXlib */,
+				757B24141B03F1BF0084A9DE /* CoreLitecoinTestsOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20148C011835638200E68E9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20148C0A1835638200E68E9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B0111183547C200878B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206B011F183547C200878B8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24131B03F1BF0084A9DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20148ADB18355D7200E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1169E2470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				E4D117582470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D117852470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D117432470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D115A52470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				E4D116AA2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D1177F2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D117A62470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				E4D117DF2470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D1165C2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D116A42470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+				E4D115C62470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D1172B2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D1166B2470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D116412470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D117CA2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D1170A2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				E4D116562470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D116F22470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D115962470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D1159F2470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D117912470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				E4D1161A2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D1168C2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+				E4D115D52470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				E4D116262470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116BF2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D117042470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				E4D115CC2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				E4D116652470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D115E12470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				E4D117AF2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				E4D116F82470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D115BD2470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D116832470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				E4D117D92470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D1162F2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D1178B2470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D117B52470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				E4D116922470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D115DB2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D115782470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				E4D1164A2470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D115902470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				E4D116082470AA9000D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D115722470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				E4D115AE2470AA9000D7DAA7 /* LTCKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148BFF1835638200E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1169F2470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				E4D117592470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D117862470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D117442470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D115A62470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				E4D116AB2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D117802470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D117A72470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				E4D117E02470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D1165D2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D116A52470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+				E4D115C72470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D1172C2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D1166C2470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D116422470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D117CB2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D1170B2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				E4D116572470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D116F32470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D115972470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D115A02470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D117922470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				E4D1161B2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D1168D2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+				E4D115D62470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				E4D116272470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116C02470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D117052470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				E4D115CD2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				E4D116662470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D115E22470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				E4D117B02470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				E4D116F92470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D115BE2470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D116842470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				E4D117DA2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D116302470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D1178C2470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D117B62470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				E4D116932470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D115DC2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D115792470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				E4D1164B2470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D115912470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				E4D116092470AA9100D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D115732470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				E4D115AF2470AA9000D7DAA7 /* LTCKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20148C97183643AB00E68E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D116A02470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				E4D1175A2470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D117872470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D117452470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D115A72470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				E4D116AC2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D117812470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D117A82470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				E4D117E12470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D1165E2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D116A62470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+				E4D115C82470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D1172D2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D1166D2470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D116432470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D117CC2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D1170C2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				E4D116582470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D116F42470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D115982470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D115A12470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D117932470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				E4D1161C2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D1168E2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+				E4D115D72470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				E4D116282470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116C12470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D117062470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				E4D115CE2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				E4D116672470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D115E32470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				E4D117B12470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				E4D116FA2470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D115BF2470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D116852470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				E4D117DB2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D116312470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D1178D2470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D117B72470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				E4D116942470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D115DD2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D1157A2470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				E4D1164C2470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D115922470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				E4D1160A2470AA9100D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D115742470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				E4D115B02470AA9000D7DAA7 /* LTCKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206B010E183547C200878B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1169D2470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				E4D117572470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D117842470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D117422470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D115A42470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				E4D116A92470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D1177E2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D117A52470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				E4D117DE2470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D1165B2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D116A32470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+				E4D115C52470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D1172A2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D1166A2470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D116402470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D117C92470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D117092470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				E4D116552470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D116F12470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D115952470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D1159E2470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D117902470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				E4D116192470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D1168B2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+				E4D115D42470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				E4D116252470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116BE2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D117032470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				E4D115CB2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				E4D116642470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D115E02470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				E4D117AE2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				E4D116F72470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D115BC2470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D116822470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				E4D117D82470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D1162E2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D1178A2470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D117B42470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				E4D116912470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D115DA2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D115772470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				E4D116492470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D1158F2470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				E4D116072470AA9000D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D115712470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				E4D115AD2470AA9000D7DAA7 /* LTCKey.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2084DD5917B8FF47005AC9E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1163F2470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D1162D2470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D116BD2470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D1177D2470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D116692470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D117AD2470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				E4D116482470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D117292470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D115AC2470AA9000D7DAA7 /* LTCKey.m in Sources */,
+				E4D116242470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116F62470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D115C42470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D116182470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D115DF2470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				E4D115D92470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D116A82470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D117D72470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D116812470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				E4D116632470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D117412470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D115702470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				E4D116542470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D117082470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				E4D117DD2470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D117C82470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D117022470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				E4D117892470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D1159D2470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D115D32470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				E4D117562470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D115BB2470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D1169C2470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				E4D1165A2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D115942470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D1158E2470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				E4D115A32470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				E4D117A42470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				E4D115762470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				2084DD6117B8FF47005AC9E6 /* main.m in Sources */,
+				E4D115CA2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				E4D1168A2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+				E4D116062470AA9000D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D116902470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D1178F2470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				E4D116F02470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D117B32470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				E4D117832470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D116A22470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		757B24111B03F1BF0084A9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D1178E2470AA9200D7DAA7 /* LTC256.m in Sources */,
+				E4D115D82470AA9000D7DAA7 /* LTCAddress.m in Sources */,
+				7558460E1B14E4B100E49C87 /* BTCEncryptedBackupTests.swift in Sources */,
+				75EB9FF11B39C61500C26E70 /* BTC256Tests.swift in Sources */,
+				E4D115992470AA9000D7DAA7 /* LTCScript.m in Sources */,
+				E4D117882470AA9200D7DAA7 /* LTCBitcoinURL.m in Sources */,
+				E4D116952470AA9100D7DAA7 /* LTCNumberFormatter.m in Sources */,
+				E4D116592470AA9100D7DAA7 /* LTCHashID.m in Sources */,
+				E4D116442470AA9100D7DAA7 /* LTCEncryptedBackup.m in Sources */,
+				E4D1160B2470AA9100D7DAA7 /* NSData+LTCData.m in Sources */,
+				E4D117B22470AA9200D7DAA7 /* LTCEncryptedMessage.m in Sources */,
+				75BBC6E51B0E721700A61690 /* BTCCurvePointTests.swift in Sources */,
+				E4D116AD2470AA9100D7DAA7 /* LTCCurrencyConverter.m in Sources */,
+				E4D116682470AA9100D7DAA7 /* LTCProtocolBuffers.m in Sources */,
+				E4D1164D2470AA9100D7DAA7 /* LTCTransaction.m in Sources */,
+				E4D115B12470AA9000D7DAA7 /* LTCKey.m in Sources */,
+				E4D116292470AA9100D7DAA7 /* LTCData.m in Sources */,
+				E4D116F52470AA9200D7DAA7 /* LTCTransactionInput.m in Sources */,
+				E4D115C02470AA9000D7DAA7 /* LTCNetwork.m in Sources */,
+				E4D117462470AA9200D7DAA7 /* LTCMerkleTree.m in Sources */,
+				E4D117B82470AA9200D7DAA7 /* LTCBlock.m in Sources */,
+				75A06DA01B17B7FE00ED7E79 /* BTCKeyTests.swift in Sources */,
+				E4D116C22470AA9100D7DAA7 /* LTCBigNumber.m in Sources */,
+				E4D116A72470AA9100D7DAA7 /* LTCErrors.m in Sources */,
+				E4D117A92470AA9200D7DAA7 /* LTCChainCom.m in Sources */,
+				752834A91B699BEC00CD92E3 /* BTCScriptTests.swift in Sources */,
+				758C8C451C08F111000C1796 /* BTCBigNumberTests.swift in Sources */,
+				75AF30371C152EE3002187AF /* BTCEncryptedMessageTests.swift in Sources */,
+				E4D117072470AA9200D7DAA7 /* LTCPaymentMethod.m in Sources */,
+				75AF303B1C153009002187AF /* BTCMerkleTreeTests.swift in Sources */,
+				E4D115C92470AA9000D7DAA7 /* LTCMnemonic.m in Sources */,
+				E4D1166E2470AA9100D7DAA7 /* LTCOpcode.m in Sources */,
+				E4D116FB2470AA9200D7DAA7 /* LTCBlindSignature.m in Sources */,
+				E4D117CD2470AA9300D7DAA7 /* LTCTransactionBuilder.m in Sources */,
+				E4D116862470AA9100D7DAA7 /* LTCAssetAddress.m in Sources */,
+				75B8190A1B04E69A0055F8B1 /* BTCPriceSourceTests.swift in Sources */,
+				E4D117E22470AA9300D7DAA7 /* LTCProcessor.m in Sources */,
+				E4D1170D2470AA9200D7DAA7 /* LTCPaymentRequest.m in Sources */,
+				200FA8DA1C07A8B80039029D /* BTCSecretSharingTests.swift in Sources */,
+				E4D115752470AA9000D7DAA7 /* LTCPaymentProtocol.m in Sources */,
+				75E565AE1B7927C800CCCFA5 /* BTCTransactionTests.swift in Sources */,
+				7549DAD11B0BB1D900F20FF0 /* BTCCurrencyConverterTests.swift in Sources */,
+				E4D117DC2470AA9300D7DAA7 /* LTCTransactionOutput.m in Sources */,
+				E4D1172E2470AA9200D7DAA7 /* LTCCurvePoint.m in Sources */,
+				E4D1157B2470AA9000D7DAA7 /* LTCScriptMachine.m in Sources */,
+				E4D1161D2470AA9100D7DAA7 /* LTCBlockHeader.m in Sources */,
+				E4D116A12470AA9100D7DAA7 /* LTCAssetType.m in Sources */,
+				75FB13E61B449661006D8935 /* BTCFancyEncryptedMessageTests.swift in Sources */,
+				75BCBB661C08FADD00D5876A /* BTCBase58Tests.swift in Sources */,
+				75B819061B04E65A0055F8B1 /* BTCAddressTests.swift in Sources */,
+				E4D1175B2470AA9200D7DAA7 /* LTCKeychain.m in Sources */,
+				E4D115A22470AA9000D7DAA7 /* LTCBase58.m in Sources */,
+				E4D115932470AA9000D7DAA7 /* LTCPriceSource.m in Sources */,
+				75BD89A41B46269E0073A611 /* BTCDataTests.swift in Sources */,
+				754564761B07F9AB008F34DC /* BTCBitcoinURLTests.swift in Sources */,
+				E4D117822470AA9200D7DAA7 /* LTCFancyEncryptedMessage.m in Sources */,
+				E4D115CF2470AA9000D7DAA7 /* LTCProtocolSerialization.m in Sources */,
+				75A1A3721B0E7DB900EA8D45 /* BTCBlindSignatureTests.swift in Sources */,
+				E4D117942470AA9200D7DAA7 /* LTCPaymentMethodRequest.m in Sources */,
+				20FFD8001B1F85F300CCA48D /* BTCPaymentProtocolTests.swift in Sources */,
+				758DDAFE1BD2D83600AEDFFB /* BTCMnemonicTests.swift in Sources */,
+				E4D1165F2470AA9100D7DAA7 /* LTCBlockchainInfo.m in Sources */,
+				E4D116322470AA9100D7DAA7 /* NS+LTCBase58.m in Sources */,
+				E4D115E42470AA9000D7DAA7 /* LTCSecretSharing.m in Sources */,
+				75B819081B04E68B0055F8B1 /* BTCBlockchainInfoTests.swift in Sources */,
+				E4D115DE2470AA9000D7DAA7 /* LTCPaymentMethodDetails.m in Sources */,
+				E4D115A82470AA9000D7DAA7 /* LTCOutpoint.m in Sources */,
+				753118261B6042A400A102E2 /* BTCKeychainTests.swift in Sources */,
+				75AF30351C152B1D002187AF /* BTCProtocolSerializationTests.swift in Sources */,
+				E4D1168F2470AA9100D7DAA7 /* LTCAssetID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		757B241D1B03F1BF0084A9DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206B0112183547C200878B8D /* CoreLitecoinOSX */;
+			targetProxy = 757B241C1B03F1BF0084A9DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20148C081835638200E68E9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20148C091835638200E68E9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		206B011D183547C200878B8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206B011E183547C200878B8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20148AFE18355D7200E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/CoreLitecoinIOSlib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinIOSlib/CoreLitecoinIOSlib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CoreLitecoinIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		20148AFF18355D7200E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/CoreLitecoinIOSlib.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinIOSlib/CoreLitecoinIOSlib-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CoreLitecoinIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20148C0D1835638200E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = Q7Q43CUMWT;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinIOS/CoreLitecoinIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CoreLitecoinIOS/CoreLitecoinIOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		20148C0E1835638200E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = Q7Q43CUMWT;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinIOS/CoreLitecoinIOS-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CoreLitecoinIOS/CoreLitecoinIOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		20148CB6183643AB00E68E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinOSXlib/CoreLitecoinOSXlib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CoreLitecoinOSX;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+			};
+			name = Debug;
+		};
+		20148CB7183643AB00E68E9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinOSXlib/CoreLitecoinOSXlib-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = CoreLitecoinOSX;
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+			};
+			name = Release;
+		};
+		206B0137183547C300878B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinOSX/CoreLitecoinOSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CoreLitecoinOSX/CoreLitecoinOSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		206B0138183547C300878B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLitecoinOSX/CoreLitecoinOSX-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CoreLitecoinOSX/CoreLitecoinOSX-Info.plist";
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		2084DD6717B8FF47005AC9E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2084DD6817B8FF47005AC9E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		20D2802E17B8FE00004A462B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = build;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.6.2;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/openssl/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/openssl/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = CoreLitecoin/SwiftBridgingHeader.h;
+			};
+			name = Debug;
+		};
+		20D2802F17B8FE00004A462B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = build;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 0.6.2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/openssl/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/openssl/lib\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = CoreLitecoin/SwiftBridgingHeader.h;
+			};
+			name = Release;
+		};
+		757B241E1B03F1BF0084A9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/openssl/include",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = CoreLitecoinTestsOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/openssl/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CoreLitecoinTestsOSX/TestsSwiftBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		757B241F1B03F1BF0084A9DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/openssl/include",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = CoreLitecoinTestsOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/openssl/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CoreLitecoinTestsOSX/TestsSwiftBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20148AFD18355D7200E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinIOSlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148AFE18355D7200E68E9C /* Debug */,
+				20148AFF18355D7200E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20148C0C1835638200E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148C0D1835638200E68E9C /* Debug */,
+				20148C0E1835638200E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20148CBA183643AB00E68E9C /* Build configuration list for PBXNativeTarget "CoreLitecoinOSXlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20148CB6183643AB00E68E9C /* Debug */,
+				20148CB7183643AB00E68E9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206B013B183547C300878B8D /* Build configuration list for PBXNativeTarget "CoreLitecoinOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206B0137183547C300878B8D /* Debug */,
+				206B0138183547C300878B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2084DD6617B8FF47005AC9E6 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2084DD6717B8FF47005AC9E6 /* Debug */,
+				2084DD6817B8FF47005AC9E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D2801D17B8FE00004A462B /* Build configuration list for PBXProject "CoreLitecoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D2802E17B8FE00004A462B /* Debug */,
+				20D2802F17B8FE00004A462B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757B24201B03F1BF0084A9DE /* Build configuration list for PBXNativeTarget "CoreLitecoinTestsOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757B241E1B03F1BF0084A9DE /* Debug */,
+				757B241F1B03F1BF0084A9DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D2801A17B8FE00004A462B /* Project object */;
+}

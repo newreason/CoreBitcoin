@@ -6,9 +6,9 @@ header_filenames = []
 header_ext_filenames = []
 
 # Collect all headers and update their license/authorship notices.
-Dir.glob("CoreBitcoin/**/*.h").each do |header_filename|
-  name = header_filename.gsub("CoreBitcoin/", "")
-  if !name["CoreBitcoin"] && !name["+Tests"]
+Dir.glob("CoreLitecoin/**/*.h").each do |header_filename|
+  name = header_filename.gsub("CoreLitecoin/", "")
+  if !name["CoreLitecoin"] && !name["+Tests"]
     if name["+"]
       header_ext_filenames << header_filename
     else
@@ -39,16 +39,16 @@ end
 
 # Update combined headers
 
-File.open("CoreBitcoin/CoreBitcoin.h", "w") do |f|
+File.open("CoreLitecoin/CoreLitecoin.h", "w") do |f|
   f.write(header_comment + "\n\n")
   header_filenames.each do |path|
     f.write("#import <#{path}>\n")
   end
 end
 
-File.open("CoreBitcoin/CoreBitcoin+Categories.h", "w") do |f|
+File.open("CoreLitecoin/CoreLitecoin+Categories.h", "w") do |f|
   f.write(header_comment + "\n\n")
-  f.write("#import <CoreBitcoin/CoreBitcoin.h>\n")
+  f.write("#import <CoreLitecoin/CoreLitecoin.h>\n")
   header_ext_filenames.each do |path|
     f.write("#import <#{path}>\n")
   end

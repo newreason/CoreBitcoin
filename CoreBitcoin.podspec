@@ -1,18 +1,18 @@
 Pod::Spec.new do |s|
-  s.name         = "CoreBitcoin"
+  s.name         = "CoreLitecoin"
   s.version      = "0.6.8.1"
-  s.summary      = "CoreBitcoin is an implementation of Bitcoin protocol in Objective-C."
+  s.summary      = "CoreLitecoin is an implementation of Bitcoin protocol in Objective-C."
   s.description  = <<-DESC
-                   CoreBitcoin is a complete toolkit to work with Bitcoin data structures.
+                   CoreLitecoin is a complete toolkit to work with Bitcoin data structures.
                    DESC
-  s.homepage     = "https://github.com/oleganza/CoreBitcoin"
+  s.homepage     = "https://github.com/oleganza/CoreLitecoin"
   s.license      = 'WTFPL'
   s.author       = { "Oleg Andreev" => "oleganza@gmail.com" }
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
-  s.source       = { :git => "https://github.com/oleganza/CoreBitcoin.git", :tag => s.version.to_s }
-  s.source_files = 'CoreBitcoin'
-  s.exclude_files = ['CoreBitcoin/**/*+Tests.{h,m}', 'CoreBitcoin/BTCScriptTestData.h']
+  s.source       = { :git => "https://github.com/oleganza/CoreLitecoin.git", :tag => s.version.to_s }
+  s.source_files = 'CoreLitecoin'
+  s.exclude_files = ['CoreLitecoin/**/*+Tests.{h,m}', 'CoreLitecoin/LTCScriptTestData.h']
   s.requires_arc = true
   s.framework    = 'Foundation'
   s.ios.framework = 'UIKit'

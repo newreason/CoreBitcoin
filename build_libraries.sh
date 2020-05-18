@@ -13,57 +13,57 @@ xcodebuild clean
 
 # Build iOS static libraries for simulator and for devices
 
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinIOSlib -configuration Release -sdk iphonesimulator
-mv build/libCoreBitcoinIOS.a build/libCoreBitcoinIOS-simulator.a
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinIOSlib -configuration Release -sdk iphonesimulator
+mv build/libCoreLitecoinIOS.a build/libCoreLitecoinIOS-simulator.a
 
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinIOSlib -configuration Release -sdk iphoneos
-mv build/libCoreBitcoinIOS.a build/libCoreBitcoinIOS-device.a
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinIOSlib -configuration Release -sdk iphoneos
+mv build/libCoreLitecoinIOS.a build/libCoreLitecoinIOS-device.a
 
 # Merge simulator and device libs into one
 
-lipo build/libCoreBitcoinIOS-device.a build/libCoreBitcoinIOS-simulator.a -create -output build/libCoreBitcoinIOS.a
-rm build/libCoreBitcoinIOS-simulator.a
-rm build/libCoreBitcoinIOS-device.a
+lipo build/libCoreLitecoinIOS-device.a build/libCoreLitecoinIOS-simulator.a -create -output build/libCoreLitecoinIOS.a
+rm build/libCoreLitecoinIOS-simulator.a
+rm build/libCoreLitecoinIOS-device.a
 
 # Build the iOS frameworks for simulator and for devices
 
-rm -f build/CoreBitcoinIOS*.framework
+rm -f build/CoreLitecoinIOS*.framework
 
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinIOS -configuration Release -sdk iphonesimulator
-mv build/CoreBitcoinIOS.framework build/CoreBitcoinIOS-simulator.framework
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinIOS -configuration Release -sdk iphonesimulator
+mv build/CoreLitecoinIOS.framework build/CoreLitecoinIOS-simulator.framework
 
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinIOS -configuration Release -sdk iphoneos
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinIOS -configuration Release -sdk iphoneos
 
 # Merge the libraries inside the frameworks
 
-mv build/CoreBitcoinIOS-simulator.framework/CoreBitcoinIOS build/CoreBitcoinIOS.framework/CoreBitcoinIOS-simulator
-mv build/CoreBitcoinIOS.framework/CoreBitcoinIOS build/CoreBitcoinIOS.framework/CoreBitcoinIOS-device
+mv build/CoreLitecoinIOS-simulator.framework/CoreLitecoinIOS build/CoreLitecoinIOS.framework/CoreLitecoinIOS-simulator
+mv build/CoreLitecoinIOS.framework/CoreLitecoinIOS build/CoreLitecoinIOS.framework/CoreLitecoinIOS-device
 
-lipo build/CoreBitcoinIOS.framework/CoreBitcoinIOS-simulator build/CoreBitcoinIOS.framework/CoreBitcoinIOS-device \
-		-create -output build/CoreBitcoinIOS.framework/CoreBitcoinIOS
+lipo build/CoreLitecoinIOS.framework/CoreLitecoinIOS-simulator build/CoreLitecoinIOS.framework/CoreLitecoinIOS-device \
+		-create -output build/CoreLitecoinIOS.framework/CoreLitecoinIOS
 		
 # Update openssl includes to match framework header search path
 
-./postprocess_openssl_includes_in_framework.rb build/CoreBitcoinIOS.framework
+./postprocess_openssl_includes_in_framework.rb build/CoreLitecoinIOS.framework
 
 # Delete the intermediate files
 		
-rm build/CoreBitcoinIOS.framework/CoreBitcoinIOS-device
-rm build/CoreBitcoinIOS.framework/CoreBitcoinIOS-simulator
-rm -rf build/CoreBitcoinIOS-simulator.framework
+rm build/CoreLitecoinIOS.framework/CoreLitecoinIOS-device
+rm build/CoreLitecoinIOS.framework/CoreLitecoinIOS-simulator
+rm -rf build/CoreLitecoinIOS-simulator.framework
 
 # Build for OS X
 
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinOSXlib -configuration Release
-xcodebuild -project CoreBitcoin.xcodeproj -target CoreBitcoinOSX    -configuration Release
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinOSXlib -configuration Release
+xcodebuild -project CoreLitecoin.xcodeproj -target CoreLitecoinOSX    -configuration Release
 
 # Update openssl includes to match framework header search path
 
-./postprocess_openssl_includes_in_framework.rb build/CoreBitcoinOSX.framework
+./postprocess_openssl_includes_in_framework.rb build/CoreLitecoinOSX.framework
 
 # Clean up
 
-rm -rf build/CoreBitcoin.build
+rm -rf build/CoreLitecoin.build
 
 
 # At this point all the libraries and frameworks are built and placed in the ./build 
@@ -87,15 +87,15 @@ mkdir ${BINARIES_TARGETDIR}/OSX
 mkdir ${BINARIES_TARGETDIR}/iOS
 
 # Move and rename the frameworks
-mv build/CoreBitcoinOSX.framework ${BINARIES_TARGETDIR}/OSX/CoreBitcoin.framework
-mv ${BINARIES_TARGETDIR}/OSX/CoreBitcoin.framework/CoreBitcoinOSX ${BINARIES_TARGETDIR}/OSX/CoreBitcoin.framework/CoreBitcoin
+mv build/CoreLitecoinOSX.framework ${BINARIES_TARGETDIR}/OSX/CoreLitecoin.framework
+mv ${BINARIES_TARGETDIR}/OSX/CoreLitecoin.framework/CoreLitecoinOSX ${BINARIES_TARGETDIR}/OSX/CoreLitecoin.framework/CoreLitecoin
 
-mv build/CoreBitcoinIOS.framework ${BINARIES_TARGETDIR}/iOS/CoreBitcoin.framework
-mv ${BINARIES_TARGETDIR}/iOS/CoreBitcoin.framework/CoreBitcoinIOS ${BINARIES_TARGETDIR}/iOS/CoreBitcoin.framework/CoreBitcoin
+mv build/CoreLitecoinIOS.framework ${BINARIES_TARGETDIR}/iOS/CoreLitecoin.framework
+mv ${BINARIES_TARGETDIR}/iOS/CoreLitecoin.framework/CoreLitecoinIOS ${BINARIES_TARGETDIR}/iOS/CoreLitecoin.framework/CoreLitecoin
 
 # Move and rename the static libraries
-mv build/libCoreBitcoinIOS.a ${BINARIES_TARGETDIR}/iOS/libCoreBitcoin.a
-mv build/libCoreBitcoinOSX.a ${BINARIES_TARGETDIR}/OSX/libCoreBitcoin.a
+mv build/libCoreLitecoinIOS.a ${BINARIES_TARGETDIR}/iOS/libCoreLitecoin.a
+mv build/libCoreLitecoinOSX.a ${BINARIES_TARGETDIR}/OSX/libCoreLitecoin.a
 
 # Move the headers
 mv build/include ${BINARIES_TARGETDIR}/include
