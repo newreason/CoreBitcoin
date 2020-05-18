@@ -1,11 +1,11 @@
 CoreLitecoin
 ===========
 
-CoreLitecoin implements Litecoin protocol in Objective-C and provides many additional APIs to make great apps.
+CoreLitecoin is a fork of CoreBitcoin with edited names, renamed some variables and edited address prefixes. It implements Litecoin protocol in Objective-C and provides many additional APIs to make great apps.
 
 CoreLitecoin deliberately implements as much as possible directly in Objective-C with limited dependency on OpenSSL. This gives everyone an opportunity to learn Bitcoin on a clean codebase and enables all Mac and iOS developers to extend and improve Bitcoin protocol.
 
-Using CoreLitecoin CocoaPod (recommended)
+Using CoreLitecoin CocoaPod
 ----------------------------------------
 
 Add this to your Podfile:
@@ -25,7 +25,7 @@ If you'd like to use categories, include different header:
 	#import <CoreLitecoin/CoreLitecoin+Categories.h>
 
 
-Using CoreLitecoin.framework
+Using CoreLitecoin.framework (recommended)
 ---------------------------
 
 Clone this repository and build all libraries:
